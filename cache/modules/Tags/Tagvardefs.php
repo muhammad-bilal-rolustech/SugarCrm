@@ -398,6 +398,22 @@
       'relationship' => 'stud_studentnew_tags',
       'source' => 'non-db',
     ),
+    'bus_busmanagment_link' => 
+    array (
+      'name' => 'bus_busmanagment_link',
+      'vname' => 'bus_BusManagment',
+      'type' => 'link',
+      'relationship' => 'bus_busmanagment_tags',
+      'source' => 'non-db',
+    ),
+    'bus_passenger_link' => 
+    array (
+      'name' => 'bus_passenger_link',
+      'vname' => 'bus_Passenger',
+      'type' => 'link',
+      'relationship' => 'bus_passenger_tags',
+      'source' => 'non-db',
+    ),
     'following' => 
     array (
       'massupdate' => false,

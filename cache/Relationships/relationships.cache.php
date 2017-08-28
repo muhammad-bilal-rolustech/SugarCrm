@@ -6766,6 +6766,97 @@
     'join_key_lhs' => 'stud_studentnew_tech_teachernewtech_teachernew_ida',
     'join_key_rhs' => 'stud_studentnew_tech_teachernewstud_studentnew_idb',
   ),
+  'bus_busmanagment_bus_passenger' => 
+  array (
+    'name' => 'bus_busmanagment_bus_passenger',
+    'true_relationship_type' => 'one-to-many',
+    'relationships' => 
+    array (
+      'bus_busmanagment_bus_passenger' => 
+      array (
+        'lhs_module' => 'bus_BusManagment',
+        'lhs_table' => 'bus_busmanagment',
+        'lhs_key' => 'id',
+        'rhs_module' => 'bus_Passenger',
+        'rhs_table' => 'bus_passenger',
+        'rhs_key' => 'id',
+        'relationship_type' => 'many-to-many',
+        'join_table' => 'bus_busmanagment_bus_passenger_c',
+        'join_key_lhs' => 'bus_busmanagment_bus_passengerbus_busmanagment_ida',
+        'join_key_rhs' => 'bus_busmanagment_bus_passengerbus_passenger_idb',
+      ),
+    ),
+    'table' => 'bus_busmanagment_bus_passenger_c',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => 0,
+      ),
+      'bus_busmanagment_bus_passengerbus_busmanagment_ida' => 
+      array (
+        'name' => 'bus_busmanagment_bus_passengerbus_busmanagment_ida',
+        'type' => 'id',
+      ),
+      'bus_busmanagment_bus_passengerbus_passenger_idb' => 
+      array (
+        'name' => 'bus_busmanagment_bus_passengerbus_passenger_idb',
+        'type' => 'id',
+      ),
+    ),
+    'indices' => 
+    array (
+      0 => 
+      array (
+        'name' => 'bus_busmanagment_bus_passengerspk',
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      1 => 
+      array (
+        'name' => 'bus_busmanagment_bus_passenger_ida1',
+        'type' => 'index',
+        'fields' => 
+        array (
+          0 => 'bus_busmanagment_bus_passengerbus_busmanagment_ida',
+        ),
+      ),
+      2 => 
+      array (
+        'name' => 'bus_busmanagment_bus_passenger_alt',
+        'type' => 'alternate_key',
+        'fields' => 
+        array (
+          0 => 'bus_busmanagment_bus_passengerbus_passenger_idb',
+        ),
+      ),
+    ),
+    'lhs_module' => 'bus_BusManagment',
+    'lhs_table' => 'bus_busmanagment',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Passenger',
+    'rhs_table' => 'bus_passenger',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'bus_busmanagment_bus_passenger_c',
+    'join_key_lhs' => 'bus_busmanagment_bus_passengerbus_busmanagment_ida',
+    'join_key_rhs' => 'bus_busmanagment_bus_passengerbus_passenger_idb',
+  ),
   'user_direct_reports' => 
   array (
     'name' => 'user_direct_reports',
@@ -12961,6 +13052,17 @@
     'rhs_key' => 'team_id',
     'relationship_type' => 'one-to-many',
   ),
+  'cases_accounts' => 
+  array (
+    'name' => 'cases_accounts',
+    'lhs_module' => 'Accounts',
+    'lhs_table' => 'accounts',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Cases',
+    'rhs_table' => 'cases',
+    'rhs_key' => 'accounts_id',
+    'relationship_type' => 'one-to-many',
+  ),
   'projects_notes' => 
   array (
     'name' => 'projects_notes',
@@ -14559,6 +14661,527 @@
     'rhs_key' => 'assigned_user_id',
     'relationship_type' => 'one-to-many',
   ),
+  'bus_busmanagment_modified_user' => 
+  array (
+    'name' => 'bus_busmanagment_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_BusManagment',
+    'rhs_table' => 'bus_busmanagment',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_busmanagment_created_by' => 
+  array (
+    'name' => 'bus_busmanagment_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_BusManagment',
+    'rhs_table' => 'bus_busmanagment',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_busmanagment_activities' => 
+  array (
+    'name' => 'bus_busmanagment_activities',
+    'lhs_module' => 'bus_BusManagment',
+    'lhs_table' => 'bus_busmanagment',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'bus_BusManagment',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'len' => 36,
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'len' => 36,
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+        'len' => 36,
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'bus_busmanagment_following' => 
+  array (
+    'name' => 'bus_busmanagment_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_BusManagment',
+    'rhs_table' => 'bus_busmanagment',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'bus_BusManagment',
+    'user_field' => 'created_by',
+  ),
+  'bus_busmanagment_favorite' => 
+  array (
+    'name' => 'bus_busmanagment_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_BusManagment',
+    'rhs_table' => 'bus_busmanagment',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'bus_BusManagment',
+    'user_field' => 'created_by',
+  ),
+  'bus_busmanagment_tags' => 
+  array (
+    'name' => 'bus_busmanagment_tags',
+    'lhs_module' => 'bus_BusManagment',
+    'lhs_table' => 'bus_busmanagment',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'bus_BusManagment',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      1 => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      4 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      5 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'bus_busmanagment_team_count_relationship' => 
+  array (
+    'name' => 'bus_busmanagment_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_BusManagment',
+    'rhs_table' => 'bus_busmanagment',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_busmanagment_teams' => 
+  array (
+    'name' => 'bus_busmanagment_teams',
+    'lhs_module' => 'bus_BusManagment',
+    'lhs_table' => 'bus_busmanagment',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      0 => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+      ),
+      1 => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+      ),
+      2 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      3 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'bus_busmanagment_team' => 
+  array (
+    'name' => 'bus_busmanagment_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_BusManagment',
+    'rhs_table' => 'bus_busmanagment',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_busmanagment_assigned_user' => 
+  array (
+    'name' => 'bus_busmanagment_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_BusManagment',
+    'rhs_table' => 'bus_busmanagment',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_passenger_modified_user' => 
+  array (
+    'name' => 'bus_passenger_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Passenger',
+    'rhs_table' => 'bus_passenger',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_passenger_created_by' => 
+  array (
+    'name' => 'bus_passenger_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Passenger',
+    'rhs_table' => 'bus_passenger',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_passenger_activities' => 
+  array (
+    'name' => 'bus_passenger_activities',
+    'lhs_module' => 'bus_Passenger',
+    'lhs_table' => 'bus_passenger',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'bus_Passenger',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'len' => 36,
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'len' => 36,
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+        'len' => 36,
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'bus_passenger_following' => 
+  array (
+    'name' => 'bus_passenger_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Passenger',
+    'rhs_table' => 'bus_passenger',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'bus_Passenger',
+    'user_field' => 'created_by',
+  ),
+  'bus_passenger_favorite' => 
+  array (
+    'name' => 'bus_passenger_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Passenger',
+    'rhs_table' => 'bus_passenger',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'bus_Passenger',
+    'user_field' => 'created_by',
+  ),
+  'bus_passenger_tags' => 
+  array (
+    'name' => 'bus_passenger_tags',
+    'lhs_module' => 'bus_Passenger',
+    'lhs_table' => 'bus_passenger',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'bus_Passenger',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      1 => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      4 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      5 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'bus_passenger_team_count_relationship' => 
+  array (
+    'name' => 'bus_passenger_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Passenger',
+    'rhs_table' => 'bus_passenger',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_passenger_teams' => 
+  array (
+    'name' => 'bus_passenger_teams',
+    'lhs_module' => 'bus_Passenger',
+    'lhs_table' => 'bus_passenger',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      0 => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+      ),
+      1 => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+      ),
+      2 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      3 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'bus_passenger_team' => 
+  array (
+    'name' => 'bus_passenger_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Passenger',
+    'rhs_table' => 'bus_passenger',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_passenger_assigned_user' => 
+  array (
+    'name' => 'bus_passenger_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Passenger',
+    'rhs_table' => 'bus_passenger',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'tracker_monitor_id' => 
+  array (
+    'name' => 'tracker_monitor_id',
+    'lhs_module' => 'TrackerPerfs',
+    'lhs_table' => 'tracker_perf',
+    'lhs_key' => 'monitor_id',
+    'rhs_module' => 'Trackers',
+    'rhs_table' => 'tracker',
+    'rhs_key' => 'monitor_id',
+    'relationship_type' => 'one-to-one',
+  ),
   'aclrolesets_modified_user' => 
   array (
     'name' => 'aclrolesets_modified_user',
@@ -15411,17 +16034,6 @@
     'relationship_role_column_value' => 'UserSignatures',
     'user_field' => 'created_by',
   ),
-  'tracker_monitor_id' => 
-  array (
-    'name' => 'tracker_monitor_id',
-    'lhs_module' => 'TrackerPerfs',
-    'lhs_table' => 'tracker_perf',
-    'lhs_key' => 'monitor_id',
-    'rhs_module' => 'Trackers',
-    'rhs_table' => 'tracker',
-    'rhs_key' => 'monitor_id',
-    'relationship_type' => 'one-to-one',
-  ),
   'tracker_user_id' => 
   array (
     'name' => 'tracker_user_id',
@@ -15432,6 +16044,97 @@
     'rhs_table' => 'tracker',
     'rhs_key' => 'user_id',
     'relationship_type' => 'one-to-many',
+  ),
+  'tracker_tracker_queries' => 
+  array (
+    'name' => 'tracker_tracker_queries',
+    'table' => 'tracker_tracker_queries',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'int',
+        'len' => '11',
+        'isnull' => 'false',
+        'auto_increment' => true,
+        'reportable' => false,
+      ),
+      'monitor_id' => 
+      array (
+        'name' => 'monitor_id',
+        'type' => 'id',
+        'len' => '36',
+      ),
+      'query_id' => 
+      array (
+        'name' => 'query_id',
+        'type' => 'id',
+        'len' => '36',
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+    ),
+    'indices' => 
+    array (
+      0 => 
+      array (
+        'name' => 'tracker_tracker_queriespk',
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      1 => 
+      array (
+        'name' => 'idx_tracker_tq_monitor',
+        'type' => 'index',
+        'fields' => 
+        array (
+          0 => 'monitor_id',
+        ),
+      ),
+      2 => 
+      array (
+        'name' => 'idx_tracker_tq_query',
+        'type' => 'index',
+        'fields' => 
+        array (
+          0 => 'query_id',
+        ),
+      ),
+    ),
+    'relationships' => 
+    array (
+      'tracker_tracker_queries' => 
+      array (
+        'lhs_module' => 'Trackers',
+        'lhs_table' => 'tracker',
+        'lhs_key' => 'monitor_id',
+        'rhs_module' => 'TrackerQueries',
+        'rhs_table' => 'tracker_queries',
+        'rhs_key' => 'query_id',
+        'relationship_type' => 'many-to-many',
+        'join_table' => 'tracker_tracker_queries',
+        'join_key_lhs' => 'monitor_id',
+        'join_key_rhs' => 'query_id',
+      ),
+    ),
+    'lhs_module' => 'Trackers',
+    'lhs_table' => 'tracker',
+    'lhs_key' => 'monitor_id',
+    'rhs_module' => 'TrackerQueries',
+    'rhs_table' => 'tracker_queries',
+    'rhs_key' => 'query_id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tracker_tracker_queries',
+    'join_key_lhs' => 'monitor_id',
+    'join_key_rhs' => 'query_id',
   ),
   'revisions_created_by' => 
   array (

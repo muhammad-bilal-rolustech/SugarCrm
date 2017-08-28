@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-28 12:23:29
+// created: 2017-08-28 17:43:42
 $existing_files = array (
   'mobile.php' => 1,
   'campaign_tracker.php' => 1,
@@ -8345,6 +8345,168 @@ $existing_files = array (
       'ACLRoleUserRelationship.php' => 1,
       'AclRoleSetRegistrar.php' => 1,
     ),
+    'bus_Passenger' => 
+    array (
+      'Dashlets' => 
+      array (
+        'bus_PassengerDashlet' => 
+        array (
+          'bus_PassengerDashlet.meta.php' => 1,
+          'bus_PassengerDashlet.php' => 1,
+        ),
+      ),
+      'metadata' => 
+      array (
+        'SearchFields.php' => 1,
+        'searchdefs.php' => 1,
+        'editviewdefs.php' => 1,
+        'dashletviewdefs.php' => 1,
+        'listviewdefs.php' => 1,
+        'popupdefs.php' => 1,
+        'studio.php' => 1,
+        'subpanels' => 
+        array (
+          'default.php' => 1,
+        ),
+        'detailviewdefs.php' => 1,
+        'quickcreatedefs.php' => 1,
+        'metafiles.php' => 1,
+      ),
+      'vardefs.php' => 1,
+      'bus_Passenger_sugar.php' => 1,
+      'bus_Passenger.php' => 1,
+      'clients' => 
+      array (
+        'base' => 
+        array (
+          'views' => 
+          array (
+            'selection-list' => 
+            array (
+              'selection-list.php' => 1,
+            ),
+            'list' => 
+            array (
+              'list.php' => 1,
+            ),
+            'subpanel-list' => 
+            array (
+              'subpanel-list.php' => 1,
+            ),
+            'search-list' => 
+            array (
+              'search-list.php' => 1,
+            ),
+            'record' => 
+            array (
+              'record.php' => 1,
+            ),
+            'massupdate' => 
+            array (
+              'massupdate.php' => 1,
+            ),
+            'dupecheck-list' => 
+            array (
+              'dupecheck-list.php' => 1,
+            ),
+          ),
+          'menus' => 
+          array (
+            'quickcreate' => 
+            array (
+              'quickcreate.php' => 1,
+            ),
+            'header' => 
+            array (
+              'header.php' => 1,
+            ),
+          ),
+          'filters' => 
+          array (
+            'default' => 
+            array (
+              'default.php' => 1,
+            ),
+            'basic' => 
+            array (
+              'basic.php' => 1,
+            ),
+          ),
+        ),
+        'mobile' => 
+        array (
+          'views' => 
+          array (
+            'edit' => 
+            array (
+              'edit.php' => 1,
+            ),
+            'list' => 
+            array (
+              'list.php' => 1,
+            ),
+            'detail' => 
+            array (
+              'detail.php' => 1,
+            ),
+          ),
+          'layouts' => 
+          array (
+            'edit' => 
+            array (
+              'edit.php' => 1,
+            ),
+            'list' => 
+            array (
+              'list.php' => 1,
+            ),
+            'detail' => 
+            array (
+              'detail.php' => 1,
+            ),
+          ),
+        ),
+      ),
+      'language' => 
+      array (
+        'sv_SE.lang.php' => 1,
+        'uk_UA.lang.php' => 1,
+        'fi_FI.lang.php' => 1,
+        'fr_FR.lang.php' => 1,
+        'hu_HU.lang.php' => 1,
+        'pt_PT.lang.php' => 1,
+        'he_IL.lang.php' => 1,
+        'zh_CN.lang.php' => 1,
+        'pt_BR.lang.php' => 1,
+        'es_LA.lang.php' => 1,
+        'bg_BG.lang.php' => 1,
+        'nl_NL.lang.php' => 1,
+        'el_EL.lang.php' => 1,
+        'lt_LT.lang.php' => 1,
+        'ro_RO.lang.php' => 1,
+        'ca_ES.lang.php' => 1,
+        'en_us.lang.php' => 1,
+        'da_DK.lang.php' => 1,
+        'lv_LV.lang.php' => 1,
+        'sq_AL.lang.php' => 1,
+        'zh_TW.lang.php' => 1,
+        'cs_CZ.lang.php' => 1,
+        'it_it.lang.php' => 1,
+        'sk_SK.lang.php' => 1,
+        'pl_PL.lang.php' => 1,
+        'en_UK.lang.php' => 1,
+        'nb_NO.lang.php' => 1,
+        'es_ES.lang.php' => 1,
+        'ru_RU.lang.php' => 1,
+        'et_EE.lang.php' => 1,
+        'ar_SA.lang.php' => 1,
+        'tr_TR.lang.php' => 1,
+        'de_DE.lang.php' => 1,
+        'sr_RS.lang.php' => 1,
+        'ja_JP.lang.php' => 1,
+        'ko_KR.lang.php' => 1,
+      ),
+    ),
     'MailMerge' => 
     array (
       'Step5.php' => 1,
@@ -15010,6 +15172,168 @@ $existing_files = array (
       'TestUpgrader.php' => 1,
       'UpgradeRemoval.php' => 1,
       'uw_utils.php' => 1,
+    ),
+    'bus_BusManagment' => 
+    array (
+      'Dashlets' => 
+      array (
+        'bus_BusManagmentDashlet' => 
+        array (
+          'bus_BusManagmentDashlet.meta.php' => 1,
+          'bus_BusManagmentDashlet.php' => 1,
+        ),
+      ),
+      'metadata' => 
+      array (
+        'SearchFields.php' => 1,
+        'searchdefs.php' => 1,
+        'editviewdefs.php' => 1,
+        'dashletviewdefs.php' => 1,
+        'listviewdefs.php' => 1,
+        'popupdefs.php' => 1,
+        'studio.php' => 1,
+        'subpanels' => 
+        array (
+          'default.php' => 1,
+        ),
+        'detailviewdefs.php' => 1,
+        'quickcreatedefs.php' => 1,
+        'metafiles.php' => 1,
+      ),
+      'bus_BusManagment_sugar.php' => 1,
+      'bus_BusManagment.php' => 1,
+      'vardefs.php' => 1,
+      'clients' => 
+      array (
+        'base' => 
+        array (
+          'views' => 
+          array (
+            'selection-list' => 
+            array (
+              'selection-list.php' => 1,
+            ),
+            'list' => 
+            array (
+              'list.php' => 1,
+            ),
+            'subpanel-list' => 
+            array (
+              'subpanel-list.php' => 1,
+            ),
+            'search-list' => 
+            array (
+              'search-list.php' => 1,
+            ),
+            'record' => 
+            array (
+              'record.php' => 1,
+            ),
+            'massupdate' => 
+            array (
+              'massupdate.php' => 1,
+            ),
+            'dupecheck-list' => 
+            array (
+              'dupecheck-list.php' => 1,
+            ),
+          ),
+          'menus' => 
+          array (
+            'quickcreate' => 
+            array (
+              'quickcreate.php' => 1,
+            ),
+            'header' => 
+            array (
+              'header.php' => 1,
+            ),
+          ),
+          'filters' => 
+          array (
+            'default' => 
+            array (
+              'default.php' => 1,
+            ),
+            'basic' => 
+            array (
+              'basic.php' => 1,
+            ),
+          ),
+        ),
+        'mobile' => 
+        array (
+          'views' => 
+          array (
+            'edit' => 
+            array (
+              'edit.php' => 1,
+            ),
+            'list' => 
+            array (
+              'list.php' => 1,
+            ),
+            'detail' => 
+            array (
+              'detail.php' => 1,
+            ),
+          ),
+          'layouts' => 
+          array (
+            'edit' => 
+            array (
+              'edit.php' => 1,
+            ),
+            'list' => 
+            array (
+              'list.php' => 1,
+            ),
+            'detail' => 
+            array (
+              'detail.php' => 1,
+            ),
+          ),
+        ),
+      ),
+      'language' => 
+      array (
+        'sv_SE.lang.php' => 1,
+        'uk_UA.lang.php' => 1,
+        'fi_FI.lang.php' => 1,
+        'fr_FR.lang.php' => 1,
+        'hu_HU.lang.php' => 1,
+        'pt_PT.lang.php' => 1,
+        'he_IL.lang.php' => 1,
+        'zh_CN.lang.php' => 1,
+        'pt_BR.lang.php' => 1,
+        'es_LA.lang.php' => 1,
+        'bg_BG.lang.php' => 1,
+        'nl_NL.lang.php' => 1,
+        'el_EL.lang.php' => 1,
+        'lt_LT.lang.php' => 1,
+        'ro_RO.lang.php' => 1,
+        'ca_ES.lang.php' => 1,
+        'en_us.lang.php' => 1,
+        'da_DK.lang.php' => 1,
+        'lv_LV.lang.php' => 1,
+        'sq_AL.lang.php' => 1,
+        'zh_TW.lang.php' => 1,
+        'cs_CZ.lang.php' => 1,
+        'it_it.lang.php' => 1,
+        'sk_SK.lang.php' => 1,
+        'pl_PL.lang.php' => 1,
+        'en_UK.lang.php' => 1,
+        'nb_NO.lang.php' => 1,
+        'es_ES.lang.php' => 1,
+        'ru_RU.lang.php' => 1,
+        'et_EE.lang.php' => 1,
+        'ar_SA.lang.php' => 1,
+        'tr_TR.lang.php' => 1,
+        'de_DE.lang.php' => 1,
+        'sr_RS.lang.php' => 1,
+        'ja_JP.lang.php' => 1,
+        'ko_KR.lang.php' => 1,
+      ),
     ),
     'Relationships' => 
     array (
@@ -23421,10 +23745,60 @@ $existing_files = array (
     'metadata' => 
     array (
       'stud_studentnew_tech_teachernewMetaData.php' => 1,
+      'bus_busmanagment_bus_passengerMetaData.php' => 1,
     ),
     'modules' => 
     array (
       'unified_search_modules_display.php' => 1,
+      'bus_Passenger' => 
+      array (
+        'Ext' => 
+        array (
+          'Language' => 
+          array (
+            'sr_RS.lang.ext.php' => 1,
+            'zh_TW.lang.ext.php' => 1,
+            'de_DE.lang.ext.php' => 1,
+            'da_DK.lang.ext.php' => 1,
+            'pt_PT.lang.ext.php' => 1,
+            'et_EE.lang.ext.php' => 1,
+            'ar_SA.lang.ext.php' => 1,
+            'tr_TR.lang.ext.php' => 1,
+            'en_UK.lang.ext.php' => 1,
+            'bg_BG.lang.ext.php' => 1,
+            'fr_FR.lang.ext.php' => 1,
+            'he_IL.lang.ext.php' => 1,
+            'cs_CZ.lang.ext.php' => 1,
+            'ro_RO.lang.ext.php' => 1,
+            'nb_NO.lang.ext.php' => 1,
+            'pl_PL.lang.ext.php' => 1,
+            'fi_FI.lang.ext.php' => 1,
+            'pt_BR.lang.ext.php' => 1,
+            'lv_LV.lang.ext.php' => 1,
+            'zh_CN.lang.ext.php' => 1,
+            'en_us.lang.ext.php' => 1,
+            'hu_HU.lang.ext.php' => 1,
+            'sq_AL.lang.ext.php' => 1,
+            'sk_SK.lang.ext.php' => 1,
+            'es_ES.lang.ext.php' => 1,
+            'nl_NL.lang.ext.php' => 1,
+            'ko_KR.lang.ext.php' => 1,
+            'el_EL.lang.ext.php' => 1,
+            'it_it.lang.ext.php' => 1,
+            'ca_ES.lang.ext.php' => 1,
+            'ja_JP.lang.ext.php' => 1,
+            'uk_UA.lang.ext.php' => 1,
+            'lt_LT.lang.ext.php' => 1,
+            'es_LA.lang.ext.php' => 1,
+            'sv_SE.lang.ext.php' => 1,
+            'ru_RU.lang.ext.php' => 1,
+          ),
+          'Vardefs' => 
+          array (
+            'vardefs.ext.php' => 1,
+          ),
+        ),
+      ),
       'Calls' => 
       array (
         'Ext' => 
@@ -23504,6 +23878,39 @@ $existing_files = array (
           ),
         ),
       ),
+      'Cases' => 
+      array (
+        'Ext' => 
+        array (
+          'Vardefs' => 
+          array (
+            'vardefs.ext.php' => 1,
+          ),
+        ),
+        'clients' => 
+        array (
+          'base' => 
+          array (
+            'views' => 
+            array (
+              'record' => 
+              array (
+                'reord.php' => 1,
+              ),
+            ),
+          ),
+        ),
+      ),
+      'Accounts' => 
+      array (
+        'Ext' => 
+        array (
+          'Vardefs' => 
+          array (
+            'vardefs.ext.php' => 1,
+          ),
+        ),
+      ),
       'Opportunities' => 
       array (
         'Ext' => 
@@ -23511,6 +23918,86 @@ $existing_files = array (
           'LogicHooks' => 
           array (
             'logichooks.ext.php' => 1,
+          ),
+        ),
+      ),
+      'bus_BusManagment' => 
+      array (
+        'Ext' => 
+        array (
+          'Language' => 
+          array (
+            'sr_RS.lang.ext.php' => 1,
+            'zh_TW.lang.ext.php' => 1,
+            'de_DE.lang.ext.php' => 1,
+            'da_DK.lang.ext.php' => 1,
+            'pt_PT.lang.ext.php' => 1,
+            'et_EE.lang.ext.php' => 1,
+            'ar_SA.lang.ext.php' => 1,
+            'tr_TR.lang.ext.php' => 1,
+            'en_UK.lang.ext.php' => 1,
+            'bg_BG.lang.ext.php' => 1,
+            'fr_FR.lang.ext.php' => 1,
+            'he_IL.lang.ext.php' => 1,
+            'cs_CZ.lang.ext.php' => 1,
+            'ro_RO.lang.ext.php' => 1,
+            'nb_NO.lang.ext.php' => 1,
+            'pl_PL.lang.ext.php' => 1,
+            'fi_FI.lang.ext.php' => 1,
+            'pt_BR.lang.ext.php' => 1,
+            'lv_LV.lang.ext.php' => 1,
+            'zh_CN.lang.ext.php' => 1,
+            'en_us.lang.ext.php' => 1,
+            'hu_HU.lang.ext.php' => 1,
+            'sq_AL.lang.ext.php' => 1,
+            'sk_SK.lang.ext.php' => 1,
+            'es_ES.lang.ext.php' => 1,
+            'nl_NL.lang.ext.php' => 1,
+            'ko_KR.lang.ext.php' => 1,
+            'el_EL.lang.ext.php' => 1,
+            'it_it.lang.ext.php' => 1,
+            'ca_ES.lang.ext.php' => 1,
+            'ja_JP.lang.ext.php' => 1,
+            'uk_UA.lang.ext.php' => 1,
+            'lt_LT.lang.ext.php' => 1,
+            'es_LA.lang.ext.php' => 1,
+            'sv_SE.lang.ext.php' => 1,
+            'ru_RU.lang.ext.php' => 1,
+          ),
+          'Vardefs' => 
+          array (
+            'vardefs.ext.php' => 1,
+          ),
+          'WirelessLayoutdefs' => 
+          array (
+            'wireless.subpaneldefs.ext.php' => 1,
+          ),
+          'Layoutdefs' => 
+          array (
+            'layoutdefs.ext.php' => 1,
+          ),
+          'clients' => 
+          array (
+            'base' => 
+            array (
+              'layouts' => 
+              array (
+                'subpanels' => 
+                array (
+                  'subpanels.ext.php' => 1,
+                ),
+              ),
+            ),
+            'mobile' => 
+            array (
+              'layouts' => 
+              array (
+                'subpanels' => 
+                array (
+                  'subpanels.ext.php' => 1,
+                ),
+              ),
+            ),
           ),
         ),
       ),
@@ -23696,6 +24183,42 @@ $existing_files = array (
               ),
             ),
           ),
+          'BusSystemPackage' => 
+          array (
+            'modules' => 
+            array (
+              'BusManagment' => 
+              array (
+                'clients' => 
+                array (
+                  'base' => 
+                  array (
+                    'views' => 
+                    array (
+                      'record' => 
+                      array (
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              'Passenger' => 
+              array (
+                'clients' => 
+                array (
+                  'base' => 
+                  array (
+                    'views' => 
+                    array (
+                      'record' => 
+                      array (
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
           'StudModule' => 
           array (
             'modules' => 
@@ -23750,12 +24273,20 @@ $existing_files = array (
       array (
         'images' => 
         array (
+          'bus_Passenger.gif' => 1,
           'tech_TeacherNew.gif' => 1,
           'icon_Stud_StudentNew_32.png' => 1,
+          'icon_Bus_BusManagment_32.png' => 1,
           'icon_Tech_TeacherNew_32.png' => 1,
           'Createtech_TeacherNew.gif' => 1,
+          'icon_bus_BusManagment_bar_32.png' => 1,
+          'Createbus_BusManagment.gif' => 1,
           'stud_StudentNew.gif' => 1,
           'icon_stud_StudentNew_bar_32.png' => 1,
+          'Createbus_Passenger.gif' => 1,
+          'bus_BusManagment.gif' => 1,
+          'icon_Bus_Passenger_32.png' => 1,
+          'icon_bus_Passenger_bar_32.png' => 1,
           'Createstud_StudentNew.gif' => 1,
           'icon_tech_TeacherNew_bar_32.png' => 1,
         ),

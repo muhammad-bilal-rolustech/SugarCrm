@@ -1,0 +1,21 @@
+<?php
+// WARNING: The contents of this file are auto-generated.
+?>
+<?php
+// Merged from custom/Extension/modules/bus_BusManagment/Ext/Vardefs/bus_busmanagment_bus_passenger_bus_BusManagment.php
+
+// created: 2017-08-28 14:15:19
+$dictionary["bus_BusManagment"]["fields"]["bus_busmanagment_bus_passenger"] = array (
+  'name' => 'bus_busmanagment_bus_passenger',
+  'type' => 'link',
+  'relationship' => 'bus_busmanagment_bus_passenger',
+  'source' => 'non-db',
+  'module' => 'bus_Passenger',
+  'bean_name' => 'bus_Passenger',
+  'vname' => 'LBL_BUS_BUSMANAGMENT_BUS_PASSENGER_FROM_BUS_BUSMANAGMENT_TITLE',
+  'id_name' => 'bus_busmanagment_bus_passengerbus_busmanagment_ida',
+  'link-type' => 'many',
+  'side' => 'left',
+);
+
+?>

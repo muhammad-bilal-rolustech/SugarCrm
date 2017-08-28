@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-28 12:23:31
+// created: 2017-08-28 17:43:41
 $mod_strings = array (
   'LBL_CURRENCY' => 'Currency:',
   'LBL_CURRENCIES' => 'Currencies',
@@ -12,6 +12,8 @@ $mod_strings = array (
   'LBL_TEAM_ID' => 'Team Id',
   'LBL_ASSIGNED_TO_ID' => 'Assigned User:',
   'LBL_ASSIGNED_TO_NAME' => 'Assigned to:',
+  'LBL_TAGS_LINK' => 'Tags',
+  'LBL_TAGS' => 'Tags',
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
   'LBL_DATE_MODIFIED' => 'Date Modified',
