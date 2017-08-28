@@ -1,0 +1,27 @@
+# Ignore custom .htaccess stuff.
+ent/sugarcrm/.htaccess
+# Ignore the cache directory completely.
+# This will break the current behaviour. Which was often leading to
+# the misuse of the repository as backup replacement.
+# For development the cache directory can be safely ignored and
+# therefore it is ignored.
+ent/sugarcrm/cache/
+# Ignore some files and directories from the custom directory.
+ent/sugarcrm/custom/history/
+ent/sugarcrm/custom/modulebuilder/
+ent/sugarcrm/custom/working/
+ent/sugarcrm/custom/modules/*/Ext/
+ent/sugarcrm/custom/application/Ext/
+# Custom configuration should also be ignored.
+ent/sugarcrm/config.php
+ent/sugarcrm/config_override.php
+# The silent upgrade scripts aren't needed.
+ent/sugarcrm/silentUpgrade*.php
+# Logs files can safely be ignored.
+ent/sugarcrm/*.log
+# Ignore the new upload directories.
+ent/sugarcrm/upload/
+ent/sugarcrm/upload_backup/
+ent/sugarcrm/custom/modules/Connectors/metadata/connectors.php
+ent/sugarcrm/custom/blowfish
+ent/sugarcrm/custom/xfer

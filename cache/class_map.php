@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-28 17:51:39
+// created: 2017-08-28 18:36:49
 $class_map = array (
   'XTemplate' => 'vendor/XTemplate/xtpl.php',
   'Javascript' => 'include/javascript/javascript.php',
@@ -5813,4 +5813,13 @@ $class_map = array (
   'OAuthException' => false,
   'UserBasedRelationship' => 'data/Relationships/UserBasedRelationship.php',
   'FilterApi' => 'clients/base/api/FilterApi.php',
+  'TrueExpression' => 'include/Expressions/Expression/Boolean/TrueExpression.php',
+  'SugarFieldExpression' => 'include/Expressions/Expression/Generic/SugarFieldExpression.php',
+  'StringLiteralExpression' => 'include/Expressions/Expression/String/StringLiteralExpression.php',
+  'EqualExpression' => 'include/Expressions/Expression/Boolean/EqualExpression.php',
+  'Sugarcrm\\Sugarcrm\\custom\\SearchEngine\\Engine\\Elastic' => false,
+  'Sugarcrm\\Sugarcrm\\custom\\Elasticsearch\\Container' => false,
+  'ReportVisibility' => 'data/visibility/ReportVisibility.php',
+  'KBVisibility' => 'data/visibility/KBVisibility.php',
+  'SugarSearchEngineFactory' => 'include/SugarSearchEngine/SugarSearchEngineFactory.php',
 );
