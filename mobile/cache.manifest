@@ -1,0 +1,32 @@
+CACHE MANIFEST
+# Fri, 16 Sep 2016 13:31:55 GMT
+# Version: 3.0.5
+# Build: 343/13
+index.html
+
+# cache fonts
+font/fontawesome-webfont.ttf
+
+CACHE:
+# images
+img/favicon.ico
+img/touch-icon.png
+img/touch-icon-152.png
+img/touch-icon-196.png
+img/logo.svg
+img/logo-login.svg
+img/offline-list.svg
+img/offline-detail.svg
+img/offline-edit.svg
+
+# javascripts
+js/lib.js
+js/sidecar.js
+js/nomad.js
+js/templates.js
+
+#other resources
+
+NETWORK:
+*
+
