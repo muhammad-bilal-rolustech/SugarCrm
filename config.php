@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-28 10:58:51
+// created: 2017-08-28 12:24:56
 $sugar_config = array (
   'additional_js_config' => 
   array (
@@ -200,6 +200,7 @@ $sugar_config = array (
   'default_user_is_admin' => false,
   'default_user_name' => '',
   'demoData' => 'no',
+  'developerMode' => false,
   'diagnostic_file_max_lifetime' => 604800,
   'disable_convert_lead' => false,
   'disable_export' => false,
@@ -211,6 +212,7 @@ $sugar_config = array (
   'email_default_client' => 'sugar',
   'email_default_delete_attachments' => true,
   'email_default_editor' => 'html',
+  'email_xss' => 'YToxMzp7czo2OiJhcHBsZXQiO3M6NjoiYXBwbGV0IjtzOjQ6ImJhc2UiO3M6NDoiYmFzZSI7czo1OiJlbWJlZCI7czo1OiJlbWJlZCI7czo0OiJmb3JtIjtzOjQ6ImZvcm0iO3M6NToiZnJhbWUiO3M6NToiZnJhbWUiO3M6ODoiZnJhbWVzZXQiO3M6ODoiZnJhbWVzZXQiO3M6NjoiaWZyYW1lIjtzOjY6ImlmcmFtZSI7czo2OiJpbXBvcnQiO3M6ODoiXD9pbXBvcnQiO3M6NToibGF5ZXIiO3M6NToibGF5ZXIiO3M6NDoibGluayI7czo0OiJsaW5rIjtzOjY6Im9iamVjdCI7czo2OiJvYmplY3QiO3M6Njoic2NyaXB0IjtzOjY6InNjcmlwdCI7czozOiJ4bXAiO3M6MzoieG1wIjt9',
   'enable_mobile_redirect' => true,
   'export_delimiter' => ',',
   'export_excel_compatible' => false,
@@ -241,7 +243,7 @@ $sugar_config = array (
     'timeout' => 3600,
   ),
   'js_custom_version' => 1,
-  'js_lang_version' => 1,
+  'js_lang_version' => 14,
   'languages' => 
   array (
     'en_us' => 'English (US)',
@@ -441,6 +443,4 @@ $sugar_config = array (
   'verify_client_ip' => true,
   'wl_list_max_entries_per_page' => 10,
   'wl_list_max_entries_per_subpanel' => 3,
-  'disable_team_access_check' => true,
-  'email_xss' => 'YToxMzp7czo2OiJhcHBsZXQiO3M6NjoiYXBwbGV0IjtzOjQ6ImJhc2UiO3M6NDoiYmFzZSI7czo1OiJlbWJlZCI7czo1OiJlbWJlZCI7czo0OiJmb3JtIjtzOjQ6ImZvcm0iO3M6NToiZnJhbWUiO3M6NToiZnJhbWUiO3M6ODoiZnJhbWVzZXQiO3M6ODoiZnJhbWVzZXQiO3M6NjoiaWZyYW1lIjtzOjY6ImlmcmFtZSI7czo2OiJpbXBvcnQiO3M6ODoiXD9pbXBvcnQiO3M6NToibGF5ZXIiO3M6NToibGF5ZXIiO3M6NDoibGluayI7czo0OiJsaW5rIjtzOjY6Im9iamVjdCI7czo2OiJvYmplY3QiO3M6Njoic2NyaXB0IjtzOjY6InNjcmlwdCI7czozOiJ4bXAiO3M6MzoieG1wIjt9',
 );

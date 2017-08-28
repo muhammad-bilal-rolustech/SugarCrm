@@ -108,8 +108,8 @@
       ),
     ),
   ),
+  'custom_fields' => false,
   'related_calc_fields' => 
   array (
   ),
-  'custom_fields' => false,
 );

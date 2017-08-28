@@ -382,6 +382,22 @@
       'relationship' => 'kbcontents_tags',
       'source' => 'non-db',
     ),
+    'tech_teachernew_link' => 
+    array (
+      'name' => 'tech_teachernew_link',
+      'vname' => 'tech_TeacherNew',
+      'type' => 'link',
+      'relationship' => 'tech_teachernew_tags',
+      'source' => 'non-db',
+    ),
+    'stud_studentnew_link' => 
+    array (
+      'name' => 'stud_studentnew_link',
+      'vname' => 'stud_StudentNew',
+      'type' => 'link',
+      'relationship' => 'stud_studentnew_tags',
+      'source' => 'non-db',
+    ),
     'following' => 
     array (
       'massupdate' => false,

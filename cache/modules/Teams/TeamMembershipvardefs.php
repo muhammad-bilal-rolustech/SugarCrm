@@ -104,6 +104,7 @@
       'join_key_rhs' => 'user_id',
     ),
   ),
+  'custom_fields' => false,
   'related_calc_fields' => 
   array (
   ),

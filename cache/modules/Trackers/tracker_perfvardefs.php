@@ -91,6 +91,10 @@
       ),
     ),
   ),
+  'acls' => 
+  array (
+    'SugarACLStatic' => true,
+  ),
   'related_calc_fields' => 
   array (
   ),

@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-28 10:58:56
+// created: 2017-08-28 12:23:32
 $unified_search_modules = array (
   'Accounts' => 
   array (
@@ -440,6 +440,28 @@ $unified_search_modules = array (
           1 => 'contacts.last_name',
         ),
         'force_unifiedsearch' => true,
+      ),
+    ),
+    'default' => false,
+  ),
+  'stud_StudentNew' => 
+  array (
+    'fields' => 
+    array (
+      'name' => 
+      array (
+        'query_type' => 'default',
+      ),
+    ),
+    'default' => false,
+  ),
+  'tech_TeacherNew' => 
+  array (
+    'fields' => 
+    array (
+      'name' => 
+      array (
+        'query_type' => 'default',
       ),
     ),
     'default' => false,
