@@ -1142,3 +1142,272 @@ Mon Aug 28 19:16:56 2017 [13590][-none-][FATAL] Configuration variable date.time
 Mon Aug 28 19:21:57 2017 [13630][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
 Mon Aug 28 19:21:57 2017 [12014][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
 Mon Aug 28 19:21:57 2017 [13290][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:26:58 2017 [6702][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:26:58 2017 [13558][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:26:58 2017 [12857][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:20 2017 [5307][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:20 2017 [5307][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:20 2017 [5307][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:20 2017 [5307][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:23 2017 [13590][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:25 2017 [13590][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:36 2017 [13590][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:37 2017 [13290][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:37 2017 [13290][1][FATAL]  Query Failed: SELECT  case when jt6_favorite_link.id IS NOT NULL then 1 else 0 end my_favorite, case when jt1_following_link.id IS NOT NULL then 1 else 0 end following, cases.case_number case_number, cases.name name, jt3_accounts.name account_name, jt3_accounts.assigned_user_id account_name_owner, cases.account_id account_id, cases.priority priority, cases.status status, jt4_assigned_user_link.first_name rel_assigned_user_name_first_name, jt4_assigned_user_link.last_name rel_assigned_user_name_last_name, jt4_assigned_user_link.created_by assigned_user_name_owner, cases.date_modified date_modified, cases.date_entered date_entered, cases.team_set_id team_set_id, LTRIM(RTRIM(CONCAT(IFNULL(jt5_team_link.name,''),' ',IFNULL(jt5_team_link.name_2,'')))) team_name, jt5_team_link.created_by team_name_owner, cases.assigned_user_id assigned_user_id, cases.team_id team_id, cases.id id, cases.created_by created_by FROM cases LEFT JOIN sugarfavorites sf_cases ON (cases.id = sf_cases.record_id AND sf_cases.deleted = 0 AND sf_cases.module = 'Cases' AND sf_cases.created_by = '1')
+ LEFT JOIN subscriptions jt2_subscriptions ON (cases.id = jt2_subscriptions.parent_id AND jt2_subscriptions.deleted = 0 AND jt2_subscriptions.parent_type = 'Cases' AND jt2_subscriptions.created_by = '1')
+ LEFT JOIN users jt1_following_link ON (jt1_following_link.id = jt2_subscriptions.created_by AND jt1_following_link.deleted = 0)
+ LEFT JOIN accounts jt3_accounts ON (cases.accounts_id = jt3_accounts.id AND jt3_accounts.deleted = 0)
+ LEFT JOIN users jt4_assigned_user_link ON (cases.assigned_user_id = jt4_assigned_user_link.id AND jt4_assigned_user_link.deleted = 0)
+ LEFT JOIN teams jt5_team_link ON (cases.team_id = jt5_team_link.id AND jt5_team_link.deleted = 0)
+ LEFT JOIN users jt6_favorite_link ON (jt6_favorite_link.id = sf_cases.modified_user_id AND jt6_favorite_link.deleted = 0)  WHERE cases.deleted = 0  ORDER BY cases.date_modified DESC,cases.id DESC  LIMIT 0,21: MySQL error 1054: Unknown column 'cases.accounts_id' in 'on clause'
+Mon Aug 28 19:31:37 2017 [13590][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:37 2017 [13590][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:37 2017 [13290][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:43 2017 [13290][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:43 2017 [6702][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:43 2017 [13290][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:43 2017 [13290][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:44 2017 [13290][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:45 2017 [13290][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:58 2017 [13558][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:58 2017 [11441][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:31:58 2017 [16617][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:33:27 2017 [13694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:33:27 2017 [12014][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:33:27 2017 [12014][1][FATAL]  Query Failed: SELECT  case when jt6_favorite_link.id IS NOT NULL then 1 else 0 end my_favorite, case when jt1_following_link.id IS NOT NULL then 1 else 0 end following, cases.case_number case_number, cases.name name, jt3_accounts.name account_name, jt3_accounts.assigned_user_id account_name_owner, cases.account_id account_id, cases.priority priority, cases.status status, jt4_assigned_user_link.first_name rel_assigned_user_name_first_name, jt4_assigned_user_link.last_name rel_assigned_user_name_last_name, jt4_assigned_user_link.created_by assigned_user_name_owner, cases.date_modified date_modified, cases.date_entered date_entered, cases.team_set_id team_set_id, LTRIM(RTRIM(CONCAT(IFNULL(jt5_team_link.name,''),' ',IFNULL(jt5_team_link.name_2,'')))) team_name, jt5_team_link.created_by team_name_owner, cases.assigned_user_id assigned_user_id, cases.team_id team_id, cases.id id, cases.created_by created_by FROM cases LEFT JOIN sugarfavorites sf_cases ON (cases.id = sf_cases.record_id AND sf_cases.deleted = 0 AND sf_cases.module = 'Cases' AND sf_cases.created_by = '1')
+ LEFT JOIN subscriptions jt2_subscriptions ON (cases.id = jt2_subscriptions.parent_id AND jt2_subscriptions.deleted = 0 AND jt2_subscriptions.parent_type = 'Cases' AND jt2_subscriptions.created_by = '1')
+ LEFT JOIN users jt1_following_link ON (jt1_following_link.id = jt2_subscriptions.created_by AND jt1_following_link.deleted = 0)
+ LEFT JOIN accounts jt3_accounts ON (cases.accounts_id = jt3_accounts.id AND jt3_accounts.deleted = 0)
+ LEFT JOIN users jt4_assigned_user_link ON (cases.assigned_user_id = jt4_assigned_user_link.id AND jt4_assigned_user_link.deleted = 0)
+ LEFT JOIN teams jt5_team_link ON (cases.team_id = jt5_team_link.id AND jt5_team_link.deleted = 0)
+ LEFT JOIN users jt6_favorite_link ON (jt6_favorite_link.id = sf_cases.modified_user_id AND jt6_favorite_link.deleted = 0)  WHERE cases.deleted = 0  ORDER BY cases.date_modified DESC,cases.id DESC  LIMIT 0,21: MySQL error 1054: Unknown column 'cases.accounts_id' in 'on clause'
+Mon Aug 28 19:33:27 2017 [12014][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:33:27 2017 [12014][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:33:27 2017 [13694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:33:34 2017 [5307][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:33:34 2017 [5307][1][FATAL]  Query Failed: SELECT  case when jt6_favorite_link.id IS NOT NULL then 1 else 0 end my_favorite, case when jt1_following_link.id IS NOT NULL then 1 else 0 end following, cases.case_number case_number, cases.name name, jt3_accounts.name account_name, jt3_accounts.assigned_user_id account_name_owner, cases.account_id account_id, cases.priority priority, cases.status status, jt4_assigned_user_link.first_name rel_assigned_user_name_first_name, jt4_assigned_user_link.last_name rel_assigned_user_name_last_name, jt4_assigned_user_link.created_by assigned_user_name_owner, cases.date_modified date_modified, cases.date_entered date_entered, cases.team_set_id team_set_id, LTRIM(RTRIM(CONCAT(IFNULL(jt5_team_link.name,''),' ',IFNULL(jt5_team_link.name_2,'')))) team_name, jt5_team_link.created_by team_name_owner, cases.assigned_user_id assigned_user_id, cases.team_id team_id, cases.id id, cases.created_by created_by FROM cases LEFT JOIN sugarfavorites sf_cases ON (cases.id = sf_cases.record_id AND sf_cases.deleted = 0 AND sf_cases.module = 'Cases' AND sf_cases.created_by = '1')
+ LEFT JOIN subscriptions jt2_subscriptions ON (cases.id = jt2_subscriptions.parent_id AND jt2_subscriptions.deleted = 0 AND jt2_subscriptions.parent_type = 'Cases' AND jt2_subscriptions.created_by = '1')
+ LEFT JOIN users jt1_following_link ON (jt1_following_link.id = jt2_subscriptions.created_by AND jt1_following_link.deleted = 0)
+ LEFT JOIN accounts jt3_accounts ON (cases.accounts_id = jt3_accounts.id AND jt3_accounts.deleted = 0)
+ LEFT JOIN users jt4_assigned_user_link ON (cases.assigned_user_id = jt4_assigned_user_link.id AND jt4_assigned_user_link.deleted = 0)
+ LEFT JOIN teams jt5_team_link ON (cases.team_id = jt5_team_link.id AND jt5_team_link.deleted = 0)
+ LEFT JOIN users jt6_favorite_link ON (jt6_favorite_link.id = sf_cases.modified_user_id AND jt6_favorite_link.deleted = 0)  WHERE cases.deleted = 0  ORDER BY cases.date_modified DESC,cases.id DESC  LIMIT 0,21: MySQL error 1054: Unknown column 'cases.accounts_id' in 'on clause'
+Mon Aug 28 19:33:34 2017 [5307][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:33:34 2017 [5307][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:33:34 2017 [13630][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:36:58 2017 [13590][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:36:58 2017 [6702][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:36:58 2017 [13290][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:36:59 2017 [13590][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:37:00 2017 [6702][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:37:00 2017 [13590][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:37:00 2017 [13290][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:42:00 2017 [11441][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:42:00 2017 [13558][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:42:00 2017 [16617][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:47:01 2017 [13694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:47:01 2017 [12014][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:47:01 2017 [13630][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:52:02 2017 [13290][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:52:02 2017 [5307][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:52:02 2017 [6702][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:57:02 2017 [13590][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:57:02 2017 [13558][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Mon Aug 28 19:57:03 2017 [11441][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:06 2017 [3531][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:16 2017 [3535][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:16 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:16 2017 [3535][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:16 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:16 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:17 2017 [3535][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:17 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:17 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:17 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:18 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:18 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:18 2017 [3535][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:18 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:18 2017 [3532][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:19 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:19 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:19 2017 [3532][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:19 2017 [3535][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:19 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:19 2017 [3532][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:19 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:19 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:19 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:23 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:23 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:23 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:23 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:28 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:29 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:41 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:42 2017 [4417][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:42 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:42 2017 [4417][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:42 2017 [4417][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:43 2017 [4417][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:44 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:44 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:44 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:54:48 2017 [4417][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:58:31 2017 [3532][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:58:39 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:58:41 2017 [3532][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:58:52 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:58:52 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:58:53 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:58:53 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:58:56 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:59:00 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:59:18 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:59:18 2017 [3531][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 10:59:18 2017 [4473][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:03:34 2017 [4577][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:03:34 2017 [4417][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:03:34 2017 [4417][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:03:34 2017 [4417][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:03:35 2017 [4417][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:03:44 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:05 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:06 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:08 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:10 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:13 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:18 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:18 2017 [3531][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:18 2017 [4472][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:22 2017 [4472][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:24 2017 [4472][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:33 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:36 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:41 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:42 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:46 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:04:53 2017 [4417][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:15 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:44 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:44 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:44 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:44 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:44 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:44 2017 [4694][1][FATAL]  Query Failed: SELECT  case when jt6_favorite_link.id IS NOT NULL then 1 else 0 end my_favorite, case when jt1_following_link.id IS NOT NULL then 1 else 0 end following, cases.case_number case_number, cases.name name, jt3_accounts.name account_name, jt3_accounts.assigned_user_id account_name_owner, cases.account_id account_id, cases.priority priority, cases.status status, jt4_assigned_user_link.first_name rel_assigned_user_name_first_name, jt4_assigned_user_link.last_name rel_assigned_user_name_last_name, jt4_assigned_user_link.created_by assigned_user_name_owner, cases.date_modified date_modified, cases.date_entered date_entered, cases.team_set_id team_set_id, LTRIM(RTRIM(CONCAT(IFNULL(jt5_team_link.name,''),' ',IFNULL(jt5_team_link.name_2,'')))) team_name, jt5_team_link.created_by team_name_owner, cases.assigned_user_id assigned_user_id, cases.team_id team_id, cases.id id, cases.created_by created_by FROM cases LEFT JOIN sugarfavorites sf_cases ON (cases.id = sf_cases.record_id AND sf_cases.deleted = 0 AND sf_cases.module = 'Cases' AND sf_cases.created_by = '1')
+ LEFT JOIN subscriptions jt2_subscriptions ON (cases.id = jt2_subscriptions.parent_id AND jt2_subscriptions.deleted = 0 AND jt2_subscriptions.parent_type = 'Cases' AND jt2_subscriptions.created_by = '1')
+ LEFT JOIN users jt1_following_link ON (jt1_following_link.id = jt2_subscriptions.created_by AND jt1_following_link.deleted = 0)
+ LEFT JOIN accounts jt3_accounts ON (cases.accounts_id = jt3_accounts.id AND jt3_accounts.deleted = 0)
+ LEFT JOIN users jt4_assigned_user_link ON (cases.assigned_user_id = jt4_assigned_user_link.id AND jt4_assigned_user_link.deleted = 0)
+ LEFT JOIN teams jt5_team_link ON (cases.team_id = jt5_team_link.id AND jt5_team_link.deleted = 0)
+ LEFT JOIN users jt6_favorite_link ON (jt6_favorite_link.id = sf_cases.modified_user_id AND jt6_favorite_link.deleted = 0)  WHERE cases.deleted = 0  ORDER BY cases.date_modified DESC,cases.id DESC  LIMIT 0,21: MySQL error 1054: Unknown column 'cases.accounts_id' in 'on clause'
+Tue Aug 29 11:05:44 2017 [3531][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:44 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:51 2017 [3531][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:53 2017 [3531][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:53 2017 [3531][1][FATAL]  Query Failed: SELECT  case when jt6_favorite_link.id IS NOT NULL then 1 else 0 end my_favorite, case when jt1_following_link.id IS NOT NULL then 1 else 0 end following, cases.case_number case_number, cases.name name, jt3_accounts.name account_name, jt3_accounts.assigned_user_id account_name_owner, cases.account_id account_id, cases.priority priority, cases.status status, jt4_assigned_user_link.first_name rel_assigned_user_name_first_name, jt4_assigned_user_link.last_name rel_assigned_user_name_last_name, jt4_assigned_user_link.created_by assigned_user_name_owner, cases.date_modified date_modified, cases.date_entered date_entered, cases.team_set_id team_set_id, LTRIM(RTRIM(CONCAT(IFNULL(jt5_team_link.name,''),' ',IFNULL(jt5_team_link.name_2,'')))) team_name, jt5_team_link.created_by team_name_owner, cases.assigned_user_id assigned_user_id, cases.team_id team_id, cases.id id, cases.created_by created_by FROM cases LEFT JOIN sugarfavorites sf_cases ON (cases.id = sf_cases.record_id AND sf_cases.deleted = 0 AND sf_cases.module = 'Cases' AND sf_cases.created_by = '1')
+ LEFT JOIN subscriptions jt2_subscriptions ON (cases.id = jt2_subscriptions.parent_id AND jt2_subscriptions.deleted = 0 AND jt2_subscriptions.parent_type = 'Cases' AND jt2_subscriptions.created_by = '1')
+ LEFT JOIN users jt1_following_link ON (jt1_following_link.id = jt2_subscriptions.created_by AND jt1_following_link.deleted = 0)
+ LEFT JOIN accounts jt3_accounts ON (cases.accounts_id = jt3_accounts.id AND jt3_accounts.deleted = 0)
+ LEFT JOIN users jt4_assigned_user_link ON (cases.assigned_user_id = jt4_assigned_user_link.id AND jt4_assigned_user_link.deleted = 0)
+ LEFT JOIN teams jt5_team_link ON (cases.team_id = jt5_team_link.id AND jt5_team_link.deleted = 0)
+ LEFT JOIN users jt6_favorite_link ON (jt6_favorite_link.id = sf_cases.modified_user_id AND jt6_favorite_link.deleted = 0)  WHERE cases.deleted = 0  ORDER BY cases.date_modified DESC,cases.id DESC  LIMIT 0,21: MySQL error 1054: Unknown column 'cases.accounts_id' in 'on clause'
+Tue Aug 29 11:05:53 2017 [3531][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:53 2017 [3531][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:05:53 2017 [4472][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:06:20 2017 [4473][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:06:20 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:06:20 2017 [3534][1][FATAL]  Query Failed: SELECT  case when jt6_favorite_link.id IS NOT NULL then 1 else 0 end my_favorite, case when jt1_following_link.id IS NOT NULL then 1 else 0 end following, cases.case_number case_number, cases.name name, jt3_accounts.name account_name, jt3_accounts.assigned_user_id account_name_owner, cases.account_id account_id, cases.priority priority, cases.status status, jt4_assigned_user_link.first_name rel_assigned_user_name_first_name, jt4_assigned_user_link.last_name rel_assigned_user_name_last_name, jt4_assigned_user_link.created_by assigned_user_name_owner, cases.date_modified date_modified, cases.date_entered date_entered, cases.team_set_id team_set_id, LTRIM(RTRIM(CONCAT(IFNULL(jt5_team_link.name,''),' ',IFNULL(jt5_team_link.name_2,'')))) team_name, jt5_team_link.created_by team_name_owner, cases.assigned_user_id assigned_user_id, cases.team_id team_id, cases.id id, cases.created_by created_by FROM cases LEFT JOIN sugarfavorites sf_cases ON (cases.id = sf_cases.record_id AND sf_cases.deleted = 0 AND sf_cases.module = 'Cases' AND sf_cases.created_by = '1')
+ LEFT JOIN subscriptions jt2_subscriptions ON (cases.id = jt2_subscriptions.parent_id AND jt2_subscriptions.deleted = 0 AND jt2_subscriptions.parent_type = 'Cases' AND jt2_subscriptions.created_by = '1')
+ LEFT JOIN users jt1_following_link ON (jt1_following_link.id = jt2_subscriptions.created_by AND jt1_following_link.deleted = 0)
+ LEFT JOIN accounts jt3_accounts ON (cases.accounts_id = jt3_accounts.id AND jt3_accounts.deleted = 0)
+ LEFT JOIN users jt4_assigned_user_link ON (cases.assigned_user_id = jt4_assigned_user_link.id AND jt4_assigned_user_link.deleted = 0)
+ LEFT JOIN teams jt5_team_link ON (cases.team_id = jt5_team_link.id AND jt5_team_link.deleted = 0)
+ LEFT JOIN users jt6_favorite_link ON (jt6_favorite_link.id = sf_cases.modified_user_id AND jt6_favorite_link.deleted = 0)  WHERE cases.deleted = 0  ORDER BY cases.date_modified DESC,cases.id DESC  LIMIT 0,21: MySQL error 1054: Unknown column 'cases.accounts_id' in 'on clause'
+Tue Aug 29 11:06:20 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:06:20 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:06:20 2017 [4473][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:06:23 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:06:23 2017 [4473][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:06:23 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:06:23 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:06:25 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:06:25 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:09:19 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:09:19 2017 [4417][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:09:19 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:14:20 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:14:20 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:14:20 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:15:02 2017 [4472][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:15:05 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:15:07 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:15:22 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:15:23 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:15:23 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:15:23 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:15:24 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:15:30 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:15:43 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:15:50 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:15:53 2017 [4435][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:16:13 2017 [5003][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:16:13 2017 [4472][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:16:14 2017 [5003][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:16:14 2017 [5003][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:16:15 2017 [5003][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:16:23 2017 [5003][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:08 2017 [3531][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:18 2017 [4404][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:19 2017 [4473][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:33 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:33 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:33 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:33 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:34 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:35 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:35 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:35 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:35 2017 [3531][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:35 2017 [4472][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:17:39 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:02 2017 [5098][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:10 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:11 2017 [5098][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:19 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:19 2017 [5098][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:20 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:20 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:20 2017 [3531][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:20 2017 [5160][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:20 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:21 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:21 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:21 2017 [5160][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:22 2017 [5160][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:22 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:22 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:24 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:25 2017 [5160][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:25 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:25 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:19:30 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:22:15 2017 [4472][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:22:23 2017 [5098][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:22:25 2017 [4472][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:22:41 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:22:41 2017 [5098][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:22:41 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:22:42 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:22:42 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:22:47 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:24:21 2017 [4473][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:24:21 2017 [3531][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:24:21 2017 [5289][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:29:22 2017 [4709][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:29:22 2017 [4472][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:29:22 2017 [3534][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:34:23 2017 [5160][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:34:23 2017 [4694][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:34:23 2017 [5098][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!
+Tue Aug 29 11:36:38 2017 [4440][-none-][FATAL] Configuration variable date.timezone is not set, guessed timezone Asia/Karachi. Please set date.timezone="Asia/Karachi" in php.ini!

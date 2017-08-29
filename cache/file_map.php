@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-28 17:43:42
+// created: 2017-08-29 11:22:27
 $existing_files = array (
   'mobile.php' => 1,
   'campaign_tracker.php' => 1,
@@ -23908,6 +23908,19 @@ $existing_files = array (
           'Vardefs' => 
           array (
             'vardefs.ext.php' => 1,
+          ),
+          'clients' => 
+          array (
+            'base' => 
+            array (
+              'layouts' => 
+              array (
+                'subpanels' => 
+                array (
+                  'subpanels.ext.php' => 1,
+                ),
+              ),
+            ),
           ),
         ),
       ),

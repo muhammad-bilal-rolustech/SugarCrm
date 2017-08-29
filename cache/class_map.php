@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-28 18:36:49
+// created: 2017-08-29 11:36:44
 $class_map = array (
   'XTemplate' => 'vendor/XTemplate/xtpl.php',
   'Javascript' => 'include/javascript/javascript.php',
@@ -5798,6 +5798,8 @@ $class_map = array (
   'EmailAddressRelationship' => 'data/Relationships/EmailAddressRelationship.php',
   'OwnerVisibility' => 'data/visibility/OwnerVisibility.php',
   'OwnerOrAdminVisibility' => 'data/visibility/OwnerOrAdminVisibility.php',
+  'UserBasedRelationship' => 'data/Relationships/UserBasedRelationship.php',
+  'FilterApi' => 'clients/base/api/FilterApi.php',
   'Sugarcrm\\Sugarcrm\\custom\\Security\\Validator\\Constraints\\Type' => false,
   'Sugarcrm\\Sugarcrm\\Security\\Validator\\Constraints\\Type' => false,
   'Sugarcrm\\Sugarcrm\\custom\\Security\\Validator\\Constraints\\Range' => false,
@@ -5811,15 +5813,4 @@ $class_map = array (
   'Sugarcrm\\Sugarcrm\\custom\\Security\\Csrf\\CsrfAuthenticator' => false,
   'Sugarcrm\\Sugarcrm\\custom\\Security\\Validator\\Constraints\\Language' => false,
   'OAuthException' => false,
-  'UserBasedRelationship' => 'data/Relationships/UserBasedRelationship.php',
-  'FilterApi' => 'clients/base/api/FilterApi.php',
-  'TrueExpression' => 'include/Expressions/Expression/Boolean/TrueExpression.php',
-  'SugarFieldExpression' => 'include/Expressions/Expression/Generic/SugarFieldExpression.php',
-  'StringLiteralExpression' => 'include/Expressions/Expression/String/StringLiteralExpression.php',
-  'EqualExpression' => 'include/Expressions/Expression/Boolean/EqualExpression.php',
-  'Sugarcrm\\Sugarcrm\\custom\\SearchEngine\\Engine\\Elastic' => false,
-  'Sugarcrm\\Sugarcrm\\custom\\Elasticsearch\\Container' => false,
-  'ReportVisibility' => 'data/visibility/ReportVisibility.php',
-  'KBVisibility' => 'data/visibility/KBVisibility.php',
-  'SugarSearchEngineFactory' => 'include/SugarSearchEngine/SugarSearchEngineFactory.php',
 );
