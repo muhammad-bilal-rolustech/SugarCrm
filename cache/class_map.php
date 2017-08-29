@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-29 11:49:25
+// created: 2017-08-29 11:54:28
 $class_map = array (
   'XTemplate' => 'vendor/XTemplate/xtpl.php',
   'Javascript' => 'include/javascript/javascript.php',
@@ -5791,4 +5791,21 @@ $class_map = array (
   'SugarACLOpi' => 'data/acl/SugarACLOpi.php',
   'SugarACLUsers' => 'data/acl/SugarACLUsers.php',
   'UserBasedRelationship' => 'data/Relationships/UserBasedRelationship.php',
+  'TrueExpression' => 'include/Expressions/Expression/Boolean/TrueExpression.php',
+  'SugarFieldExpression' => 'include/Expressions/Expression/Generic/SugarFieldExpression.php',
+  'StringLiteralExpression' => 'include/Expressions/Expression/String/StringLiteralExpression.php',
+  'EqualExpression' => 'include/Expressions/Expression/Boolean/EqualExpression.php',
+  'OwnerVisibility' => 'data/visibility/OwnerVisibility.php',
+  'Sugarcrm\\Sugarcrm\\custom\\SearchEngine\\Engine\\Elastic' => false,
+  'Sugarcrm\\Sugarcrm\\custom\\Elasticsearch\\Container' => false,
+  'MetaDataContextInterface' => 'modules/ModuleBuilder/parsers/MetaDataContext/MetaDataContextInterface.php',
+  'MetaDataContextDefault' => 'modules/ModuleBuilder/parsers/MetaDataContext/MetaDataContextDefault.php',
+  'ReportVisibility' => 'data/visibility/ReportVisibility.php',
+  'OwnerOrAdminVisibility' => 'data/visibility/OwnerOrAdminVisibility.php',
+  'KBVisibility' => 'data/visibility/KBVisibility.php',
+  'SugarACLEmailAddress' => 'data/acl/SugarACLEmailAddress.php',
+  'SugarACLDeveloperOrAdmin' => 'data/acl/SugarACLDeveloperOrAdmin.php',
+  'SugarSearchEngineFactory' => 'include/SugarSearchEngine/SugarSearchEngineFactory.php',
+  'MetaDataContextUser' => 'modules/ModuleBuilder/parsers/MetaDataContext/MetaDataContextUser.php',
+  'FilterApi' => 'clients/base/api/FilterApi.php',
 );
