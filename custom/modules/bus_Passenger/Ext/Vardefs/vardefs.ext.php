@@ -4,7 +4,7 @@
 <?php
 // Merged from custom/Extension/modules/bus_Passenger/Ext/Vardefs/bus_busmanagment_bus_passenger_bus_Passenger.php
 
-// created: 2017-08-28 14:15:19
+// created: 2017-08-29 12:28:12
 $dictionary["bus_Passenger"]["fields"]["bus_busmanagment_bus_passenger"] = array (
   'name' => 'bus_busmanagment_bus_passenger',
   'type' => 'link',

@@ -12,5 +12,9 @@
 
 $app_list_strings['moduleList']['bus_BusManagment'] = 'BusManagments';
 $app_list_strings['moduleList']['bus_Passenger'] = 'Passengers';
+$app_list_strings['moduleList']['bus_Room'] = 'Rooms';
+$app_list_strings['moduleList']['bus_Chair'] = 'Chairs';
 $app_list_strings['moduleListSingular']['bus_BusManagment'] = 'BusManagment';
 $app_list_strings['moduleListSingular']['bus_Passenger'] = 'Passenger';
+$app_list_strings['moduleListSingular']['bus_Room'] = 'Room';
+$app_list_strings['moduleListSingular']['bus_Chair'] = 'Chair';

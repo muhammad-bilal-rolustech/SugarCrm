@@ -145,6 +145,15 @@ $clientCache['Bugs']['base']['layout'] = array (
             'link' => 'emails',
           ),
         ),
+        10 => 
+        array (
+          'layout' => 'subpanel',
+          'label' => 'LBL_BUGS_CONTRACTS_TITLE',
+          'context' => 
+          array (
+            'link' => 'contracts',
+          ),
+        ),
       ),
     ),
   ),
@@ -192,6 +201,6 @@ $clientCache['Bugs']['base']['layout'] = array (
       'name' => 'LBL_DEFAULT_DASHBOARD_TITLE',
     ),
   ),
-  '_hash' => 'a2e00a14623689251ed123e6d2f05654',
+  '_hash' => '09fe791508725a9428efcf00087d6918',
 );
 

@@ -6857,6 +6857,194 @@
     'join_key_lhs' => 'bus_busmanagment_bus_passengerbus_busmanagment_ida',
     'join_key_rhs' => 'bus_busmanagment_bus_passengerbus_passenger_idb',
   ),
+  'bus_room_bus_chair' => 
+  array (
+    'name' => 'bus_room_bus_chair',
+    'true_relationship_type' => 'many-to-many',
+    'relationships' => 
+    array (
+      'bus_room_bus_chair' => 
+      array (
+        'lhs_module' => 'bus_Room',
+        'lhs_table' => 'bus_room',
+        'lhs_key' => 'id',
+        'rhs_module' => 'bus_Chair',
+        'rhs_table' => 'bus_chair',
+        'rhs_key' => 'id',
+        'relationship_type' => 'many-to-many',
+        'join_table' => 'bus_room_bus_chair_c',
+        'join_key_lhs' => 'bus_room_bus_chairbus_room_ida',
+        'join_key_rhs' => 'bus_room_bus_chairbus_chair_idb',
+      ),
+    ),
+    'table' => 'bus_room_bus_chair_c',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => 0,
+      ),
+      'bus_room_bus_chairbus_room_ida' => 
+      array (
+        'name' => 'bus_room_bus_chairbus_room_ida',
+        'type' => 'id',
+      ),
+      'bus_room_bus_chairbus_chair_idb' => 
+      array (
+        'name' => 'bus_room_bus_chairbus_chair_idb',
+        'type' => 'id',
+      ),
+    ),
+    'indices' => 
+    array (
+      0 => 
+      array (
+        'name' => 'bus_room_bus_chairspk',
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      1 => 
+      array (
+        'name' => 'bus_room_bus_chair_alt',
+        'type' => 'alternate_key',
+        'fields' => 
+        array (
+          0 => 'bus_room_bus_chairbus_room_ida',
+          1 => 'bus_room_bus_chairbus_chair_idb',
+        ),
+      ),
+    ),
+    'lhs_module' => 'bus_Room',
+    'lhs_table' => 'bus_room',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Chair',
+    'rhs_table' => 'bus_chair',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'bus_room_bus_chair_c',
+    'join_key_lhs' => 'bus_room_bus_chairbus_room_ida',
+    'join_key_rhs' => 'bus_room_bus_chairbus_chair_idb',
+  ),
+  'bugs_contracts' => 
+  array (
+    'name' => 'bugs_contracts',
+    'table' => 'bugs_contracts',
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'varchar',
+        'len' => '36',
+      ),
+      1 => 
+      array (
+        'name' => 'bug_id',
+        'type' => 'varchar',
+        'len' => '36',
+      ),
+      2 => 
+      array (
+        'name' => 'contract_id',
+        'type' => 'varchar',
+        'len' => '36',
+      ),
+      3 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      4 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '1',
+        'required' => false,
+        'default' => '0',
+      ),
+    ),
+    'indices' => 
+    array (
+      0 => 
+      array (
+        'name' => 'bugs_contractspk',
+        'type' => 'primary',
+        'fields' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      1 => 
+      array (
+        'name' => 'idx_bug_cntr_bug',
+        'type' => 'index',
+        'fields' => 
+        array (
+          0 => 'bug_id',
+        ),
+      ),
+      2 => 
+      array (
+        'name' => 'idx_bug_cntr_cntr',
+        'type' => 'index',
+        'fields' => 
+        array (
+          0 => 'contract_id',
+        ),
+      ),
+      3 => 
+      array (
+        'name' => 'idx_bug_cntr',
+        'type' => 'alternate_key',
+        'fields' => 
+        array (
+          0 => 'bug_id',
+          1 => 'contract_id',
+        ),
+      ),
+    ),
+    'relationships' => 
+    array (
+      'bugs_contracts' => 
+      array (
+        'lhs_module' => 'Bugs',
+        'lhs_table' => 'bugs',
+        'lhs_key' => 'id',
+        'rhs_module' => 'Contracts',
+        'rhs_table' => 'contracts',
+        'rhs_key' => 'id',
+        'relationship_type' => 'many-to-many',
+        'join_table' => 'bugs_contracts',
+        'join_key_lhs' => 'bug_id',
+        'join_key_rhs' => 'contract_id',
+      ),
+    ),
+    'lhs_module' => 'Bugs',
+    'lhs_table' => 'bugs',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Contracts',
+    'rhs_table' => 'contracts',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'bugs_contracts',
+    'join_key_lhs' => 'bug_id',
+    'join_key_rhs' => 'contract_id',
+  ),
   'user_direct_reports' => 
   array (
     'name' => 'user_direct_reports',
@@ -15168,6 +15356,516 @@
     'lhs_key' => 'id',
     'rhs_module' => 'bus_Passenger',
     'rhs_table' => 'bus_passenger',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_chair_modified_user' => 
+  array (
+    'name' => 'bus_chair_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Chair',
+    'rhs_table' => 'bus_chair',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_chair_created_by' => 
+  array (
+    'name' => 'bus_chair_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Chair',
+    'rhs_table' => 'bus_chair',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_chair_activities' => 
+  array (
+    'name' => 'bus_chair_activities',
+    'lhs_module' => 'bus_Chair',
+    'lhs_table' => 'bus_chair',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'bus_Chair',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'len' => 36,
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'len' => 36,
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+        'len' => 36,
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'bus_chair_following' => 
+  array (
+    'name' => 'bus_chair_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Chair',
+    'rhs_table' => 'bus_chair',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'bus_Chair',
+    'user_field' => 'created_by',
+  ),
+  'bus_chair_favorite' => 
+  array (
+    'name' => 'bus_chair_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Chair',
+    'rhs_table' => 'bus_chair',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'bus_Chair',
+    'user_field' => 'created_by',
+  ),
+  'bus_chair_tags' => 
+  array (
+    'name' => 'bus_chair_tags',
+    'lhs_module' => 'bus_Chair',
+    'lhs_table' => 'bus_chair',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'bus_Chair',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      1 => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      4 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      5 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'bus_chair_team_count_relationship' => 
+  array (
+    'name' => 'bus_chair_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Chair',
+    'rhs_table' => 'bus_chair',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_chair_teams' => 
+  array (
+    'name' => 'bus_chair_teams',
+    'lhs_module' => 'bus_Chair',
+    'lhs_table' => 'bus_chair',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      0 => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+      ),
+      1 => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+      ),
+      2 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      3 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'bus_chair_team' => 
+  array (
+    'name' => 'bus_chair_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Chair',
+    'rhs_table' => 'bus_chair',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_chair_assigned_user' => 
+  array (
+    'name' => 'bus_chair_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Chair',
+    'rhs_table' => 'bus_chair',
+    'rhs_key' => 'assigned_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_room_modified_user' => 
+  array (
+    'name' => 'bus_room_modified_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Room',
+    'rhs_table' => 'bus_room',
+    'rhs_key' => 'modified_user_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_room_created_by' => 
+  array (
+    'name' => 'bus_room_created_by',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Room',
+    'rhs_table' => 'bus_room',
+    'rhs_key' => 'created_by',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_room_activities' => 
+  array (
+    'name' => 'bus_room_activities',
+    'lhs_module' => 'bus_Room',
+    'lhs_table' => 'bus_room',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Activities',
+    'rhs_table' => 'activities',
+    'rhs_key' => 'id',
+    'rhs_vname' => 'LBL_ACTIVITY_STREAM',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'activities_users',
+    'join_key_lhs' => 'parent_id',
+    'join_key_rhs' => 'activity_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'bus_Room',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'len' => 36,
+        'required' => true,
+      ),
+      'activity_id' => 
+      array (
+        'name' => 'activity_id',
+        'type' => 'id',
+        'len' => 36,
+        'required' => true,
+      ),
+      'parent_type' => 
+      array (
+        'name' => 'parent_type',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'parent_id' => 
+      array (
+        'name' => 'parent_id',
+        'type' => 'id',
+        'len' => 36,
+      ),
+      'fields' => 
+      array (
+        'name' => 'fields',
+        'type' => 'json',
+        'dbType' => 'longtext',
+        'required' => true,
+      ),
+      'date_modified' => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      'deleted' => 
+      array (
+        'name' => 'deleted',
+        'vname' => 'LBL_DELETED',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'bus_room_following' => 
+  array (
+    'name' => 'bus_room_following',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Room',
+    'rhs_table' => 'bus_room',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'subscriptions',
+    'join_key_lhs' => 'created_by',
+    'join_key_rhs' => 'parent_id',
+    'relationship_role_column' => 'parent_type',
+    'relationship_role_column_value' => 'bus_Room',
+    'user_field' => 'created_by',
+  ),
+  'bus_room_favorite' => 
+  array (
+    'name' => 'bus_room_favorite',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Room',
+    'rhs_table' => 'bus_room',
+    'rhs_key' => 'id',
+    'relationship_type' => 'user-based',
+    'join_table' => 'sugarfavorites',
+    'join_key_lhs' => 'modified_user_id',
+    'join_key_rhs' => 'record_id',
+    'relationship_role_column' => 'module',
+    'relationship_role_column_value' => 'bus_Room',
+    'user_field' => 'created_by',
+  ),
+  'bus_room_tags' => 
+  array (
+    'name' => 'bus_room_tags',
+    'lhs_module' => 'bus_Room',
+    'lhs_table' => 'bus_room',
+    'lhs_key' => 'id',
+    'rhs_module' => 'Tags',
+    'rhs_table' => 'tags',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'tag_bean_rel',
+    'join_key_lhs' => 'bean_id',
+    'join_key_rhs' => 'tag_id',
+    'relationship_role_column' => 'bean_module',
+    'relationship_role_column_value' => 'bus_Room',
+    'dynamic_subpanel' => true,
+    'fields' => 
+    array (
+      0 => 
+      array (
+        'name' => 'id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      1 => 
+      array (
+        'name' => 'tag_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      2 => 
+      array (
+        'name' => 'bean_id',
+        'type' => 'id',
+        'required' => true,
+      ),
+      3 => 
+      array (
+        'name' => 'bean_module',
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      4 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      5 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'bus_room_team_count_relationship' => 
+  array (
+    'name' => 'bus_room_team_count_relationship',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'team_sets',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Room',
+    'rhs_table' => 'bus_room',
+    'rhs_key' => 'team_set_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_room_teams' => 
+  array (
+    'name' => 'bus_room_teams',
+    'lhs_module' => 'bus_Room',
+    'lhs_table' => 'bus_room',
+    'lhs_key' => 'team_set_id',
+    'rhs_module' => 'Teams',
+    'rhs_table' => 'teams',
+    'rhs_key' => 'id',
+    'relationship_type' => 'many-to-many',
+    'join_table' => 'team_sets_teams',
+    'join_key_lhs' => 'team_set_id',
+    'join_key_rhs' => 'team_id',
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'name' => 'id',
+        'vname' => 'LBL_ID',
+        'type' => 'id',
+        'required' => true,
+      ),
+      0 => 
+      array (
+        'name' => 'team_set_id',
+        'type' => 'id',
+      ),
+      1 => 
+      array (
+        'name' => 'team_id',
+        'type' => 'id',
+      ),
+      2 => 
+      array (
+        'name' => 'date_modified',
+        'type' => 'datetime',
+      ),
+      3 => 
+      array (
+        'name' => 'deleted',
+        'type' => 'bool',
+        'len' => '',
+        'default' => '0',
+      ),
+    ),
+  ),
+  'bus_room_team' => 
+  array (
+    'name' => 'bus_room_team',
+    'lhs_module' => 'Teams',
+    'lhs_table' => 'teams',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Room',
+    'rhs_table' => 'bus_room',
+    'rhs_key' => 'team_id',
+    'relationship_type' => 'one-to-many',
+  ),
+  'bus_room_assigned_user' => 
+  array (
+    'name' => 'bus_room_assigned_user',
+    'lhs_module' => 'Users',
+    'lhs_table' => 'users',
+    'lhs_key' => 'id',
+    'rhs_module' => 'bus_Room',
+    'rhs_table' => 'bus_room',
     'rhs_key' => 'assigned_user_id',
     'relationship_type' => 'one-to-many',
   ),

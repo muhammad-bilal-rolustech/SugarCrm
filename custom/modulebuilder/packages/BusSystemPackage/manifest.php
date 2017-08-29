@@ -31,9 +31,9 @@ $manifest = array (
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'BusSystemPackage',
-  'published_date' => '2017-08-28 09:15:16',
+  'published_date' => '2017-08-29 07:28:10',
   'type' => 'module',
-  'version' => 1503911717,
+  'version' => 1503991691,
   'remove_tables' => 'prompt',
 );
 

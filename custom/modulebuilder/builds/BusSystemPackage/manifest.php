@@ -31,9 +31,9 @@ $manifest = array (
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'BusSystemPackage',
-  'published_date' => '2017-08-28 09:15:19',
+  'published_date' => '2017-08-29 07:28:12',
   'type' => 'module',
-  'version' => 1503911719,
+  'version' => 1503991692,
   'remove_tables' => 'prompt',
 );
 
@@ -56,6 +56,20 @@ $installdefs = array (
       'path' => 'modules/bus_Passenger/bus_Passenger.php',
       'tab' => true,
     ),
+    2 => 
+    array (
+      'module' => 'bus_Chair',
+      'class' => 'bus_Chair',
+      'path' => 'modules/bus_Chair/bus_Chair.php',
+      'tab' => true,
+    ),
+    3 => 
+    array (
+      'module' => 'bus_Room',
+      'class' => 'bus_Room',
+      'path' => 'modules/bus_Room/bus_Room.php',
+      'tab' => true,
+    ),
   ),
   'layoutdefs' => 
   array (
@@ -64,12 +78,26 @@ $installdefs = array (
       'from' => '<basepath>/SugarModules/relationships/layoutdefs/bus_busmanagment_bus_passenger_bus_BusManagment.php',
       'to_module' => 'bus_BusManagment',
     ),
+    1 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/layoutdefs/bus_room_bus_chair_bus_Chair.php',
+      'to_module' => 'bus_Chair',
+    ),
+    2 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/layoutdefs/bus_room_bus_chair_bus_Room.php',
+      'to_module' => 'bus_Room',
+    ),
   ),
   'relationships' => 
   array (
     0 => 
     array (
       'meta_data' => '<basepath>/SugarModules/relationships/relationships/bus_busmanagment_bus_passengerMetaData.php',
+    ),
+    1 => 
+    array (
+      'meta_data' => '<basepath>/SugarModules/relationships/relationships/bus_room_bus_chairMetaData.php',
     ),
   ),
   'image_dir' => '<basepath>/icons',
@@ -84,6 +112,16 @@ $installdefs = array (
     array (
       'from' => '<basepath>/SugarModules/modules/bus_Passenger',
       'to' => 'modules/bus_Passenger',
+    ),
+    2 => 
+    array (
+      'from' => '<basepath>/SugarModules/modules/bus_Chair',
+      'to' => 'modules/bus_Chair',
+    ),
+    3 => 
+    array (
+      'from' => '<basepath>/SugarModules/modules/bus_Room',
+      'to' => 'modules/bus_Room',
     ),
   ),
   'language' => 
@@ -522,6 +560,438 @@ $installdefs = array (
     ),
     72 => 
     array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'en_us',
+    ),
+    73 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'bg_BG',
+    ),
+    74 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'cs_CZ',
+    ),
+    75 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'da_DK',
+    ),
+    76 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'de_DE',
+    ),
+    77 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'el_EL',
+    ),
+    78 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'es_ES',
+    ),
+    79 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'fr_FR',
+    ),
+    80 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'he_IL',
+    ),
+    81 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'hu_HU',
+    ),
+    82 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'it_it',
+    ),
+    83 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'lt_LT',
+    ),
+    84 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'ja_JP',
+    ),
+    85 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'ko_KR',
+    ),
+    86 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'lv_LV',
+    ),
+    87 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'nb_NO',
+    ),
+    88 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'nl_NL',
+    ),
+    89 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'pl_PL',
+    ),
+    90 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'pt_PT',
+    ),
+    91 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'ro_RO',
+    ),
+    92 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'ru_RU',
+    ),
+    93 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'sv_SE',
+    ),
+    94 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'tr_TR',
+    ),
+    95 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'zh_TW',
+    ),
+    96 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'zh_CN',
+    ),
+    97 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'pt_BR',
+    ),
+    98 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'ca_ES',
+    ),
+    99 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'en_UK',
+    ),
+    100 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'sr_RS',
+    ),
+    101 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'sk_SK',
+    ),
+    102 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'sq_AL',
+    ),
+    103 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'et_EE',
+    ),
+    104 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'es_LA',
+    ),
+    105 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'fi_FI',
+    ),
+    106 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'ar_SA',
+    ),
+    107 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Chair.php',
+      'to_module' => 'bus_Chair',
+      'language' => 'uk_UA',
+    ),
+    108 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'en_us',
+    ),
+    109 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'bg_BG',
+    ),
+    110 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'cs_CZ',
+    ),
+    111 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'da_DK',
+    ),
+    112 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'de_DE',
+    ),
+    113 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'el_EL',
+    ),
+    114 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'es_ES',
+    ),
+    115 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'fr_FR',
+    ),
+    116 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'he_IL',
+    ),
+    117 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'hu_HU',
+    ),
+    118 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'it_it',
+    ),
+    119 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'lt_LT',
+    ),
+    120 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'ja_JP',
+    ),
+    121 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'ko_KR',
+    ),
+    122 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'lv_LV',
+    ),
+    123 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'nb_NO',
+    ),
+    124 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'nl_NL',
+    ),
+    125 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'pl_PL',
+    ),
+    126 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'pt_PT',
+    ),
+    127 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'ro_RO',
+    ),
+    128 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'ru_RU',
+    ),
+    129 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'sv_SE',
+    ),
+    130 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'tr_TR',
+    ),
+    131 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'zh_TW',
+    ),
+    132 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'zh_CN',
+    ),
+    133 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'pt_BR',
+    ),
+    134 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'ca_ES',
+    ),
+    135 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'en_UK',
+    ),
+    136 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'sr_RS',
+    ),
+    137 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'sk_SK',
+    ),
+    138 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'sq_AL',
+    ),
+    139 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'et_EE',
+    ),
+    140 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'es_LA',
+    ),
+    141 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'fi_FI',
+    ),
+    142 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'ar_SA',
+    ),
+    143 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/language/bus_Room.php',
+      'to_module' => 'bus_Room',
+      'language' => 'uk_UA',
+    ),
+    144 => 
+    array (
       'from' => '<basepath>/SugarModules/language/application/en_us.lang.php',
       'to_module' => 'application',
       'language' => 'en_us',
@@ -539,6 +1009,26 @@ $installdefs = array (
       'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/bus_busmanagment_bus_passenger_bus_BusManagment.php',
       'to_module' => 'bus_BusManagment',
     ),
+    2 => 
+    array (
+      'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/bus_room_bus_chair_bus_Chair.php',
+      'to_module' => 'bus_Chair',
+    ),
+    3 => 
+    array (
+      'from' => '<basepath>/SugarModules/clients/base/layouts/subpanels/bus_room_bus_chair_bus_Room.php',
+      'to_module' => 'bus_Room',
+    ),
+    4 => 
+    array (
+      'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/bus_room_bus_chair_bus_Chair.php',
+      'to_module' => 'bus_Chair',
+    ),
+    5 => 
+    array (
+      'from' => '<basepath>/SugarModules/clients/mobile/layouts/subpanels/bus_room_bus_chair_bus_Room.php',
+      'to_module' => 'bus_Room',
+    ),
   ),
   'vardefs' => 
   array (
@@ -551,6 +1041,16 @@ $installdefs = array (
     array (
       'from' => '<basepath>/SugarModules/relationships/vardefs/bus_busmanagment_bus_passenger_bus_Passenger.php',
       'to_module' => 'bus_Passenger',
+    ),
+    2 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/vardefs/bus_room_bus_chair_bus_Chair.php',
+      'to_module' => 'bus_Chair',
+    ),
+    3 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/vardefs/bus_room_bus_chair_bus_Room.php',
+      'to_module' => 'bus_Room',
     ),
   ),
   'layoutfields' => 
@@ -568,6 +1068,16 @@ $installdefs = array (
     array (
       'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/bus_busmanagment_bus_passenger_bus_BusManagment.php',
       'to_module' => 'bus_BusManagment',
+    ),
+    1 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/bus_room_bus_chair_bus_Chair.php',
+      'to_module' => 'bus_Chair',
+    ),
+    2 => 
+    array (
+      'from' => '<basepath>/SugarModules/relationships/wirelesslayoutdefs/bus_room_bus_chair_bus_Room.php',
+      'to_module' => 'bus_Room',
     ),
   ),
 );

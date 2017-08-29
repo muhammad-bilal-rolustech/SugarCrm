@@ -4,7 +4,7 @@
 
 
 
-$viewdefs['Account']['base']['layout']['subpanels']['components'][] = array (
+$viewdefs['Accounts']['base']['layout']['subpanels']['components'][] = array (
 'layout' => 'subpanel',
 'label' => 'LBL_CASES',
 'context' =>

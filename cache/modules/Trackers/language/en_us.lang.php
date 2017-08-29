@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-29 11:49:06
+// created: 2017-08-29 16:16:03
 $mod_strings = array (
   'ShowActiveUsers' => 'Show Active Users',
   'ShowLastModifiedRecords' => 'Last 10 Modified Records',

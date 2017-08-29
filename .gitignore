@@ -1,28 +1,29 @@
 ## SugarCRM
 # Ignore custom .htaccess stuff.
-/var/www/html/SugarPro-Full-7.7.1.2/.htaccess
+.htaccess
 # Ignore the cache directory completely.
 # This will break the current behaviour. Which was often leading to
 # the misuse of the repository as backup replacement.
 # For development the cache directory can be safely ignored and
 # therefore it is ignored.
-/var/www/html/SugarPro-Full-7.7.1.2/cache/*
-!/cache/index.html
+cache/*
+cache/index.html
 # Ignore some files and directories from the custom directory.
-/var/www/html/SugarPro-Full-7.7.1.2/custom/history/
-/var/www/html/SugarPro-Full-7.7.1.2/custom/modulebuilder/
-/var/www/html/SugarPro-Full-7.7.1.2/custom/working/
-/var/www/html/SugarPro-Full-7.7.1.2/custom/modules/*/Ext/
-/var/www/html/SugarPro-Full-7.7.1.2/custom/application/Ext/
+custom/history/
+custom/modulebuilder/
+custom/working/
+custom/modules/*/Ext/
+custom/application/Ext/
 # Custom configuration should also be ignored.
-/var/www/html/SugarPro-Full-7.7.1.2/config.php
-/var/www/html/SugarPro-Full-7.7.1.2/config_override.php
+config.php
+config_override.php
 # The silent upgrade scripts aren't needed.
-/var/www/html/SugarPro-Full-7.7.1.2/silentUpgrade*.php
+silentUpgrade*.php
 # Logs files can safely be ignored.
 *.log
 # Ignore the new upload directories.
-/var/www/html/SugarPro-Full-7.7.1.2/upload/*
-!/upload/index.html
-/var/www/html/SugarPro-Full-7.7.1.2/upload_backup/
-/var/www/html/SugarPro-Full-7.7.1.2/sugarcrm.log
+upload/*
+upload/index.html
+upload_backup/
+sugarcrm.log
+cache/modules/*

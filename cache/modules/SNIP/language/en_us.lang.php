@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-29 11:49:06
+// created: 2017-08-29 16:16:03
 $mod_strings = array (
   'LBL_MODULE_NAME' => 'Email Archiving',
   'LBL_SNIP_SUMMARY' => 'Email Archiving is an automatic importing service that allows users to import emails into Sugar by sending them from any mail client or service to a Sugar-provided email address. Each Sugar instance has its own unique email address. To import emails, a user sends to the provided email address using the TO, CC, BCC fields. The Email Archiving service will import the email into the Sugar instance. The service imports the email, along with any attachments, images and Calendar events, and creates records within the application that are associated with existing records based on matching email addresses.

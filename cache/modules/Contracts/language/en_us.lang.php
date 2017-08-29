@@ -1,13 +1,11 @@
 <?php
-// created: 2017-08-29 11:49:01
+// created: 2017-08-29 16:16:28
 $mod_strings = array (
   'LBL_TEAM' => 'Team:',
   'LBL_TEAMS' => 'Teams',
   'LBL_TEAM_ID' => 'Team Id',
   'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
   'LBL_ASSIGNED_TO_NAME' => 'Assigned to:',
-  'LBL_TAGS_LINK' => 'Tags',
-  'LBL_TAGS' => 'Tags',
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
   'LBL_DATE_MODIFIED' => 'Date Modified',

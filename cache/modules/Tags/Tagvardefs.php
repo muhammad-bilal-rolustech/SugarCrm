@@ -414,6 +414,22 @@
       'relationship' => 'bus_passenger_tags',
       'source' => 'non-db',
     ),
+    'bus_chair_link' => 
+    array (
+      'name' => 'bus_chair_link',
+      'vname' => 'bus_Chair',
+      'type' => 'link',
+      'relationship' => 'bus_chair_tags',
+      'source' => 'non-db',
+    ),
+    'bus_room_link' => 
+    array (
+      'name' => 'bus_room_link',
+      'vname' => 'bus_Room',
+      'type' => 'link',
+      'relationship' => 'bus_room_tags',
+      'source' => 'non-db',
+    ),
     'following' => 
     array (
       'massupdate' => false,

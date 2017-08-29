@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-29 11:49:03
+// created: 2017-08-29 16:16:01
 $unified_search_modules = array (
   'Accounts' => 
   array (
@@ -455,7 +455,29 @@ $unified_search_modules = array (
     ),
     'default' => false,
   ),
+  'bus_Chair' => 
+  array (
+    'fields' => 
+    array (
+      'name' => 
+      array (
+        'query_type' => 'default',
+      ),
+    ),
+    'default' => false,
+  ),
   'bus_Passenger' => 
+  array (
+    'fields' => 
+    array (
+      'name' => 
+      array (
+        'query_type' => 'default',
+      ),
+    ),
+    'default' => false,
+  ),
+  'bus_Room' => 
   array (
     'fields' => 
     array (

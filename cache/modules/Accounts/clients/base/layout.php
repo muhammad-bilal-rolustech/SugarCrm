@@ -6,6 +6,15 @@ $clientCache['Accounts']['base']['layout'] = array (
     array (
       'components' => 
       array (
+        0 => 
+        array (
+          'layout' => 'subpanel',
+          'label' => 'LBL_CASES',
+          'context' => 
+          array (
+            'link' => 'cases',
+          ),
+        ),
       ),
       'type' => 'subpanels',
       'span' => 12,
@@ -210,6 +219,6 @@ $clientCache['Accounts']['base']['layout'] = array (
       'name' => 'LBL_DEFAULT_DASHBOARD_TITLE',
     ),
   ),
-  '_hash' => '66588070cdf68dcfeab2dce31a11a6db',
+  '_hash' => '0ecc05c1d3bf3233ef11cd3a7d7c2229',
 );
 
