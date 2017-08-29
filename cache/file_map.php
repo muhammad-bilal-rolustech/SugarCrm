@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-29 11:22:27
+// created: 2017-08-29 11:49:01
 $existing_files = array (
   'mobile.php' => 1,
   'campaign_tracker.php' => 1,
@@ -23919,6 +23919,19 @@ $existing_files = array (
                 array (
                   'subpanels.ext.php' => 1,
                 ),
+              ),
+            ),
+          ),
+        ),
+        'clients' => 
+        array (
+          'base' => 
+          array (
+            'layouts' => 
+            array (
+              'subpanels' => 
+              array (
+                'subpanels.ext.php' => 1,
               ),
             ),
           ),

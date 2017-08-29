@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-29 11:36:44
+// created: 2017-08-29 11:49:25
 $class_map = array (
   'XTemplate' => 'vendor/XTemplate/xtpl.php',
   'Javascript' => 'include/javascript/javascript.php',
@@ -5787,30 +5787,8 @@ $class_map = array (
   'SugarSessionHandler' => 'include/SugarSessionHandler.php',
   'ACLVisibility' => 'data/visibility/ACLVisibility.php',
   'Zend_Http_Response' => 'vendor/Zend/Http/Response.php',
-  'SugarACLEmailAddress' => 'data/acl/SugarACLEmailAddress.php',
-  'SugarACLOpi' => 'data/acl/SugarACLOpi.php',
   'TeamSecurity' => 'data/visibility/TeamSecurity.php',
-  'SugarACLDeveloperOrAdmin' => 'data/acl/SugarACLDeveloperOrAdmin.php',
-  'MetaDataContextInterface' => 'modules/ModuleBuilder/parsers/MetaDataContext/MetaDataContextInterface.php',
-  'MetaDataContextUser' => 'modules/ModuleBuilder/parsers/MetaDataContext/MetaDataContextUser.php',
-  'MetaDataContextDefault' => 'modules/ModuleBuilder/parsers/MetaDataContext/MetaDataContextDefault.php',
+  'SugarACLOpi' => 'data/acl/SugarACLOpi.php',
   'SugarACLUsers' => 'data/acl/SugarACLUsers.php',
-  'EmailAddressRelationship' => 'data/Relationships/EmailAddressRelationship.php',
-  'OwnerVisibility' => 'data/visibility/OwnerVisibility.php',
-  'OwnerOrAdminVisibility' => 'data/visibility/OwnerOrAdminVisibility.php',
   'UserBasedRelationship' => 'data/Relationships/UserBasedRelationship.php',
-  'FilterApi' => 'clients/base/api/FilterApi.php',
-  'Sugarcrm\\Sugarcrm\\custom\\Security\\Validator\\Constraints\\Type' => false,
-  'Sugarcrm\\Sugarcrm\\Security\\Validator\\Constraints\\Type' => false,
-  'Sugarcrm\\Sugarcrm\\custom\\Security\\Validator\\Constraints\\Range' => false,
-  'Sugarcrm\\Sugarcrm\\Security\\Validator\\Constraints\\Range' => false,
-  'Sugarcrm\\Sugarcrm\\custom\\Security\\Validator\\Constraints\\Mvc\\ModuleName' => false,
-  'Sugarcrm\\Sugarcrm\\custom\\Session\\SessionStorage' => false,
-  'SugarACLKB' => 'data/acl/SugarACLKB.php',
-  'AdministrationViewClassic' => false,
-  'SugarACLDeveloperForAny' => 'data/acl/SugarACLDeveloperForAny.php',
-  'Sugarcrm\\Sugarcrm\\custom\\Security\\Validator\\Constraints\\File' => false,
-  'Sugarcrm\\Sugarcrm\\custom\\Security\\Csrf\\CsrfAuthenticator' => false,
-  'Sugarcrm\\Sugarcrm\\custom\\Security\\Validator\\Constraints\\Language' => false,
-  'OAuthException' => false,
 );

@@ -1,5 +1,16 @@
 <?php
 $clientCache['Accounts']['base']['layout'] = array (
+  'subpanels' => 
+  array (
+    'meta' => 
+    array (
+      'components' => 
+      array (
+      ),
+      'type' => 'subpanels',
+      'span' => 12,
+    ),
+  ),
   'list-dashboard' => 
   array (
     'meta' => 
@@ -40,187 +51,6 @@ $clientCache['Accounts']['base']['layout'] = array (
         ),
       ),
       'name' => 'LBL_DEFAULT_DASHBOARD_TITLE',
-    ),
-  ),
-  'subpanels' => 
-  array (
-    'meta' => 
-    array (
-      'components' => 
-      array (
-        0 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_CALLS_SUBPANEL_TITLE',
-          'context' => 
-          array (
-            'link' => 'calls',
-          ),
-        ),
-        1 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_MEETINGS_SUBPANEL_TITLE',
-          'context' => 
-          array (
-            'link' => 'meetings',
-          ),
-        ),
-        2 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_TASKS_SUBPANEL_TITLE',
-          'context' => 
-          array (
-            'link' => 'tasks',
-          ),
-        ),
-        3 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_NOTES_SUBPANEL_TITLE',
-          'context' => 
-          array (
-            'link' => 'notes',
-          ),
-        ),
-        4 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_MEMBER_ORG_SUBPANEL_TITLE',
-          'context' => 
-          array (
-            'link' => 'members',
-          ),
-        ),
-        5 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_EMAILS_SUBPANEL_TITLE',
-          'context' => 
-          array (
-            'link' => 'archived_emails',
-          ),
-        ),
-        6 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_CONTACTS_SUBPANEL_TITLE',
-          'override_subpanel_list_view' => 'subpanel-for-accounts',
-          'context' => 
-          array (
-            'link' => 'contacts',
-          ),
-        ),
-        7 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_OPPORTUNITIES_SUBPANEL_TITLE',
-          'override_subpanel_list_view' => 'subpanel-for-accounts',
-          'context' => 
-          array (
-            'link' => 'opportunities',
-          ),
-        ),
-        8 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_LEADS_SUBPANEL_TITLE',
-          'context' => 
-          array (
-            'link' => 'leads',
-          ),
-        ),
-        9 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_CASES_SUBPANEL_TITLE',
-          'override_subpanel_list_view' => 'subpanel-for-accounts',
-          'context' => 
-          array (
-            'link' => 'cases',
-          ),
-        ),
-        10 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_BUGS_SUBPANEL_TITLE',
-          'context' => 
-          array (
-            'link' => 'bugs',
-          ),
-        ),
-        11 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_PRODUCTS_SUBPANEL_TITLE',
-          'context' => 
-          array (
-            'link' => 'products',
-          ),
-        ),
-        12 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_DOCUMENTS_SUBPANEL_TITLE',
-          'context' => 
-          array (
-            'link' => 'documents',
-          ),
-        ),
-        13 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_QUOTES_BILLTO',
-          'override_paneltop_view' => 'panel-top-for-accounts',
-          'override_subpanel_list_view' => 'subpanel-for-accounts',
-          'context' => 
-          array (
-            'link' => 'quotes',
-            'ignore_role' => 0,
-          ),
-        ),
-        14 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_QUOTES_SHIPTO',
-          'override_paneltop_view' => 'panel-top-for-accounts',
-          'override_subpanel_list_view' => 'subpanel-for-accounts',
-          'context' => 
-          array (
-            'link' => 'quotes_shipto',
-            'ignore_role' => 0,
-          ),
-        ),
-        15 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_CAMPAIGN_LIST_SUBPANEL_TITLE',
-          'context' => 
-          array (
-            'link' => 'campaigns',
-          ),
-        ),
-        16 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_CONTRACTS_SUBPANEL_TITLE',
-          'override_subpanel_list_view' => 'subpanel-for-accounts',
-          'context' => 
-          array (
-            'link' => 'contracts',
-          ),
-        ),
-        17 => 
-        array (
-          'layout' => 'subpanel',
-          'label' => 'LBL_PROJECTS_SUBPANEL_TITLE',
-          'context' => 
-          array (
-            'link' => 'project',
-          ),
-        ),
-      ),
     ),
   ),
   'create' => 
@@ -380,6 +210,6 @@ $clientCache['Accounts']['base']['layout'] = array (
       'name' => 'LBL_DEFAULT_DASHBOARD_TITLE',
     ),
   ),
-  '_hash' => '60925265cb098c4eebfa6c7b116bc50d',
+  '_hash' => '66588070cdf68dcfeab2dce31a11a6db',
 );
 

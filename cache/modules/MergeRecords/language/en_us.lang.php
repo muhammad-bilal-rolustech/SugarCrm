@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-29 11:22:29
+// created: 2017-08-29 11:49:06
 $mod_strings = array (
   'LBL_MODULE_NAME' => 'Merge Records',
   'LBL_MODULE_NAME_SINGULAR' => 'Merge Record',
