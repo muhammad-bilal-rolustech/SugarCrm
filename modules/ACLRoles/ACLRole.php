@@ -221,14 +221,14 @@ public static function getAllRoles($returnAsArray = false)
 
 
         }
-        
+
         // Sort by translated categories
         uksort($role_actions, "ACLRole::langCompare");
         return $role_actions;
 
     }
-    
-    private static function langCompare($a, $b) 
+
+    private static function langCompare($a, $b)
     {
         global $app_list_strings;
         // Fallback to array key if translation is empty

@@ -61,3 +61,26 @@ $app_list_strings['moduleListSingular']['bus_Room'] = 'Room';
 $app_list_strings['moduleListSingular']['bus_Chair'] = 'Chair';
 
 ?>
+<?php
+// Merged from custom/Extension/application/Ext/Language/en_us.sugar_lead_source_dom.php
+
+ // created: 2017-08-31 12:13:43
+
+$app_list_strings['lead_source_dom']=array (
+  '' => '',
+  'Cold Call' => 'Cold Call',
+  'Existing Customer' => 'Existing Customer',
+  'Self Generated' => 'Self Generated',
+  'Employee' => 'Employees',
+  'Partner' => 'Partner',
+  'Public Relations' => 'Public Relations',
+  'Direct Mail' => 'Direct Mail',
+  'Conference' => 'Conference',
+  'Trade Show' => 'Trade Show',
+  'Web Site' => 'Web Site',
+  'Word of mouth' => 'Word of mouth',
+  'Email' => 'Email',
+  'Campaign' => 'Campaign',
+  'Other' => 'Other',
+);
+?>

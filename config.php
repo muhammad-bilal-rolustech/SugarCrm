@@ -1,5 +1,5 @@
 <?php
-// created: 2017-08-29 12:28:26
+// created: 2017-08-31 12:13:43
 $sugar_config = array (
   'additional_js_config' => 
   array (
@@ -243,7 +243,7 @@ $sugar_config = array (
     'timeout' => 3600,
   ),
   'js_custom_version' => 1,
-  'js_lang_version' => 23,
+  'js_lang_version' => 25,
   'languages' => 
   array (
     'en_us' => 'English (US)',

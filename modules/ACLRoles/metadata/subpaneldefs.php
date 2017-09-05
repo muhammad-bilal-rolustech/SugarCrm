@@ -10,7 +10,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
  *
  * Copyright (C) SugarCRM Inc. All rights reserved.
  */
- 
+
 // $Id: layout_defs.php 13782 2006-06-06 17:58:55Z majed $
 
 $layout_defs['ACLRoles'] = array(
@@ -37,14 +37,14 @@ $layout_defs['UserRoles'] = array(
 			'order' => 20,
 			'module' => 'ACLRoles',
 			'sort_by' => 'name',
-			'sort_order' => 'asc',			
+			'sort_order' => 'asc',
 			'subpanel_name' => 'default',
 			'get_subpanel_data' => 'aclroles',
 			'add_subpanel_data' => 'role_id',
 			'title_key' => 'LBL_ROLES_SUBPANEL_TITLE',
 		),
 	),
-	
+
 );
 
 
